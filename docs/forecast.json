@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-14T22:36:31Z",
+  "generated_utc": "2026-03-14T22:41:53Z",
   "forecast_date": "2026-03-13",
   "start_price": 70949.72,
   "regime": "D",
@@ -271,6 +271,15 @@
         "7": 0.0001,
         "10": 0.0004,
         "14": 0.0012
+      },
+      "polymarket": {
+        "contract": "Will Bitcoin dip to $50,000 in March?",
+        "market_price_cents": 4.3,
+        "raw_edge_pp": -4.2,
+        "net_edge_pp": -2.2,
+        "trade_direction": "BUY NO",
+        "edge_label": "THIN",
+        "fetched_utc": "2026-03-14T22:41:53Z"
       }
     },
     "55000": {
@@ -283,6 +292,15 @@
         "7": 0.0017,
         "10": 0.0045,
         "14": 0.012
+      },
+      "polymarket": {
+        "contract": "Will Bitcoin dip to $55,000 in March?",
+        "market_price_cents": 8.5,
+        "raw_edge_pp": -7.3,
+        "net_edge_pp": -5.3,
+        "trade_direction": "BUY NO",
+        "edge_label": "MODERATE",
+        "fetched_utc": "2026-03-14T22:41:53Z"
       }
     },
     "60000": {
@@ -295,6 +313,15 @@
         "7": 0.0214,
         "10": 0.0406,
         "14": 0.0644
+      },
+      "polymarket": {
+        "contract": "Will Bitcoin dip to $60,000 in March?",
+        "market_price_cents": 22.5,
+        "raw_edge_pp": -16.1,
+        "net_edge_pp": -14.1,
+        "trade_direction": "BUY NO",
+        "edge_label": "STRONG",
+        "fetched_utc": "2026-03-14T22:41:53Z"
       }
     },
     "62000": {
@@ -319,6 +346,15 @@
         "7": 0.147,
         "10": 0.1919,
         "14": 0.2408
+      },
+      "polymarket": {
+        "contract": "Will Bitcoin dip to $65,000 in March?",
+        "market_price_cents": 49.1,
+        "raw_edge_pp": -25.1,
+        "net_edge_pp": -23.1,
+        "trade_direction": "BUY NO",
+        "edge_label": "STRONG",
+        "fetched_utc": "2026-03-14T22:41:53Z"
       }
     },
     "68000": {
@@ -355,6 +391,15 @@
         "7": 0.494,
         "10": 0.5715,
         "14": 0.6408
+      },
+      "polymarket": {
+        "contract": "Will Bitcoin reach $75,000 in March?",
+        "market_price_cents": 57.5,
+        "raw_edge_pp": 6.6,
+        "net_edge_pp": 4.6,
+        "trade_direction": "BUY YES",
+        "edge_label": "MODERATE",
+        "fetched_utc": "2026-03-14T22:41:53Z"
       }
     },
     "80000": {
@@ -367,6 +412,15 @@
         "7": 0.2009,
         "10": 0.278,
         "14": 0.3594
+      },
+      "polymarket": {
+        "contract": "Will Bitcoin reach $80,000 in March?",
+        "market_price_cents": 23.5,
+        "raw_edge_pp": 12.4,
+        "net_edge_pp": 10.4,
+        "trade_direction": "BUY YES",
+        "edge_label": "STRONG",
+        "fetched_utc": "2026-03-14T22:41:53Z"
       }
     },
     "85000": {
@@ -379,6 +433,15 @@
         "7": 0.0821,
         "10": 0.1273,
         "14": 0.1835
+      },
+      "polymarket": {
+        "contract": "Will Bitcoin reach $85,000 in March?",
+        "market_price_cents": 7.5,
+        "raw_edge_pp": 10.8,
+        "net_edge_pp": 8.8,
+        "trade_direction": "BUY YES",
+        "edge_label": "STRONG",
+        "fetched_utc": "2026-03-14T22:41:53Z"
       }
     },
     "90000": {
@@ -391,6 +454,15 @@
         "7": 0.0313,
         "10": 0.0568,
         "14": 0.0918
+      },
+      "polymarket": {
+        "contract": "Will Bitcoin reach $90,000 in March?",
+        "market_price_cents": 2.3,
+        "raw_edge_pp": 6.9,
+        "net_edge_pp": 4.9,
+        "trade_direction": "BUY YES",
+        "edge_label": "MODERATE",
+        "fetched_utc": "2026-03-14T22:41:53Z"
       }
     },
     "95000": {
