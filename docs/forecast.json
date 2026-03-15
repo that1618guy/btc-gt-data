@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-15T00:55:57Z",
+  "generated_utc": "2026-03-15T04:21:33Z",
   "forecast_date": "2026-03-14",
   "start_price": 71204.44,
   "regime": "D",
@@ -274,14 +274,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $50,000 in March?",
-        "market_price_cents": 3.9,
-        "raw_edge_pp": -3.7,
-        "net_edge_pp": -1.7,
+        "market_price_cents": 3.1,
+        "raw_edge_pp": -3.0,
+        "net_edge_pp": -1.0,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"16750430841750281964633473509969688050218091484828573447113986659081710343189\", \"5852657811047118203630088187883213521155921582778668194890875861574412805832\"]",
         "condition_id": "0x7b63040ad654500cc30bfde62c864ca1c247621b9bc89cb4416e9f9ee01e7d6e",
-        "fetched_utc": "2026-03-15T00:55:57Z"
+        "fetched_utc": "2026-03-15T04:21:33Z"
       }
     },
     "55000": {
@@ -297,14 +297,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $55,000 in March?",
-        "market_price_cents": 8.5,
-        "raw_edge_pp": -7.4,
-        "net_edge_pp": -5.4,
+        "market_price_cents": 7.5,
+        "raw_edge_pp": -6.4,
+        "net_edge_pp": -4.4,
         "trade_direction": "BUY NO",
         "edge_label": "MODERATE",
         "clob_token_ids": "[\"3056478011660943904461466382920934987843622145282294244222474838030938303402\", \"31457332666503427242125205478269853825083052913544120844835116364879462124092\"]",
         "condition_id": "0x84c7382fc6881416a2b07b0ebe9da32daba8be44a48623a0c3fe4b22f816431a",
-        "fetched_utc": "2026-03-15T00:55:57Z"
+        "fetched_utc": "2026-03-15T04:21:33Z"
       }
     },
     "60000": {
@@ -320,14 +320,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $60,000 in March?",
-        "market_price_cents": 21.5,
-        "raw_edge_pp": -15.9,
-        "net_edge_pp": -13.9,
+        "market_price_cents": 18.5,
+        "raw_edge_pp": -12.9,
+        "net_edge_pp": -10.9,
         "trade_direction": "BUY NO",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"14043105760637709189447891018409043949145014678306461040633394405047072239189\", \"54889978754285077080670037685297679717001917285386523487998069756162812161763\"]",
         "condition_id": "0x4290a4aa43a0707f0f1193c73667074f2ef5ce8ab5d6fcdd4ca645bfe1528f03",
-        "fetched_utc": "2026-03-15T00:55:57Z"
+        "fetched_utc": "2026-03-15T04:21:33Z"
       }
     },
     "62000": {
@@ -355,14 +355,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $65,000 in March?",
-        "market_price_cents": 47.3,
-        "raw_edge_pp": -25.1,
-        "net_edge_pp": -23.1,
+        "market_price_cents": 42.4,
+        "raw_edge_pp": -20.2,
+        "net_edge_pp": -18.2,
         "trade_direction": "BUY NO",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"112493481455469093769281852159558847572704253342416714876781522096078968514094\", \"64087619211543545431479218048939484178441767712621033463416084593776314629222\"]",
         "condition_id": "0x36912c9832f0fd104d734b579fb9b3a1b31bbdc946a67356723407e3bdc96dbc",
-        "fetched_utc": "2026-03-15T00:55:57Z"
+        "fetched_utc": "2026-03-15T04:21:33Z"
       }
     },
     "68000": {
@@ -380,19 +380,28 @@
     "72000": {
       "direction": "above",
       "distance_pct": 1.1,
-      "touch_prob": {
+      "touch_prob_raw": {
         "1": 0.4308,
         "3": 0.6598,
         "5": 0.7372,
         "7": 0.7784,
         "10": 0.824,
         "14": 0.8537
-      }
+      },
+      "touch_prob": {
+        "1": 0.2585,
+        "3": 0.3959,
+        "5": 0.4423,
+        "7": 0.467,
+        "10": 0.4944,
+        "14": 0.5122
+      },
+      "calibration_haircut": 0.6
     },
     "75000": {
       "direction": "above",
       "distance_pct": 5.3,
-      "touch_prob": {
+      "touch_prob_raw": {
         "1": 0.0921,
         "3": 0.3056,
         "5": 0.4276,
@@ -400,22 +409,31 @@
         "10": 0.5872,
         "14": 0.6599
       },
+      "touch_prob": {
+        "1": 0.0553,
+        "3": 0.1834,
+        "5": 0.2566,
+        "7": 0.3047,
+        "10": 0.3523,
+        "14": 0.3959
+      },
+      "calibration_haircut": 0.6,
       "polymarket": {
         "contract": "Will Bitcoin reach $75,000 in March?",
-        "market_price_cents": 59.5,
-        "raw_edge_pp": 6.5,
-        "net_edge_pp": 4.5,
-        "trade_direction": "BUY YES",
-        "edge_label": "MODERATE",
+        "market_price_cents": 65.5,
+        "raw_edge_pp": -25.9,
+        "net_edge_pp": -23.9,
+        "trade_direction": "BUY NO",
+        "edge_label": "STRONG",
         "clob_token_ids": "[\"53871780365151386629226515608960369445542635482908110928489429430123093522377\", \"33706688152544336499821558582006595413982659114846957628399804081912334837275\"]",
         "condition_id": "0xd32f73b7d90cd18287e48b11ff855bee97543ad87ab38ef3fffde06504e5c2bd",
-        "fetched_utc": "2026-03-15T00:55:57Z"
+        "fetched_utc": "2026-03-15T04:21:33Z"
       }
     },
     "80000": {
       "direction": "above",
       "distance_pct": 12.4,
-      "touch_prob": {
+      "touch_prob_raw": {
         "1": 0.015,
         "3": 0.0731,
         "5": 0.1363,
@@ -423,22 +441,31 @@
         "10": 0.2841,
         "14": 0.3682
       },
+      "touch_prob": {
+        "1": 0.009,
+        "3": 0.0439,
+        "5": 0.0818,
+        "7": 0.1217,
+        "10": 0.1705,
+        "14": 0.2209
+      },
+      "calibration_haircut": 0.6,
       "polymarket": {
         "contract": "Will Bitcoin reach $80,000 in March?",
-        "market_price_cents": 25.0,
-        "raw_edge_pp": 11.8,
-        "net_edge_pp": 9.8,
-        "trade_direction": "BUY YES",
-        "edge_label": "STRONG",
+        "market_price_cents": 27.5,
+        "raw_edge_pp": -5.4,
+        "net_edge_pp": -3.4,
+        "trade_direction": "BUY NO",
+        "edge_label": "MODERATE",
         "clob_token_ids": "[\"89985317983195116196847912662733840736741033181969862249321821942712441807494\", \"96839284769036407740491691016901048240322264125970194871307313464800669089139\"]",
         "condition_id": "0x337e5c84b83679d5557acafcf78b5c5d4d932b9fcd7dfba7966249d64f0f0a0f",
-        "fetched_utc": "2026-03-15T00:55:57Z"
+        "fetched_utc": "2026-03-15T04:21:33Z"
       }
     },
     "85000": {
       "direction": "above",
       "distance_pct": 19.4,
-      "touch_prob": {
+      "touch_prob_raw": {
         "1": 0.0,
         "3": 0.0239,
         "5": 0.0485,
@@ -446,22 +473,31 @@
         "10": 0.1299,
         "14": 0.1896
       },
+      "touch_prob": {
+        "1": 0.0,
+        "3": 0.0143,
+        "5": 0.0291,
+        "7": 0.0488,
+        "10": 0.0779,
+        "14": 0.1138
+      },
+      "calibration_haircut": 0.6,
       "polymarket": {
         "contract": "Will Bitcoin reach $85,000 in March?",
         "market_price_cents": 7.5,
-        "raw_edge_pp": 11.5,
-        "net_edge_pp": 9.5,
+        "raw_edge_pp": 3.9,
+        "net_edge_pp": 1.9,
         "trade_direction": "BUY YES",
-        "edge_label": "STRONG",
+        "edge_label": "THIN",
         "clob_token_ids": "[\"115525206331954143666493722927087528093139997441327992335107710676655034238818\", \"107129448253563637660738396096200449059242741786870663001462069854313980470036\"]",
         "condition_id": "0x844c6215079483f67667b86e4111b6acc24d17094b5eaaaa2e021268585e1d5e",
-        "fetched_utc": "2026-03-15T00:55:57Z"
+        "fetched_utc": "2026-03-15T04:21:33Z"
       }
     },
     "90000": {
       "direction": "above",
       "distance_pct": 26.4,
-      "touch_prob": {
+      "touch_prob_raw": {
         "1": 0.0,
         "3": 0.005,
         "5": 0.0168,
@@ -469,41 +505,68 @@
         "10": 0.0543,
         "14": 0.0925
       },
+      "touch_prob": {
+        "1": 0.0,
+        "3": 0.003,
+        "5": 0.0101,
+        "7": 0.0185,
+        "10": 0.0326,
+        "14": 0.0555
+      },
+      "calibration_haircut": 0.6,
       "polymarket": {
         "contract": "Will Bitcoin reach $90,000 in March?",
-        "market_price_cents": 2.3,
-        "raw_edge_pp": 7.0,
-        "net_edge_pp": 5.0,
+        "market_price_cents": 2.2,
+        "raw_edge_pp": 3.3,
+        "net_edge_pp": 1.3,
         "trade_direction": "BUY YES",
-        "edge_label": "MODERATE",
+        "edge_label": "THIN",
         "clob_token_ids": "[\"72288567685017756888828669131409064604859118327619100036098909334128768764531\", \"25878572611692513430886813882767431339375814505385155529619949506116498635097\"]",
         "condition_id": "0xee4feb22e065060b9af73c53887c83bbbfc5246d98ec38e190bf127fadcf456c",
-        "fetched_utc": "2026-03-15T00:55:57Z"
+        "fetched_utc": "2026-03-15T04:21:33Z"
       }
     },
     "95000": {
       "direction": "above",
       "distance_pct": 33.4,
-      "touch_prob": {
+      "touch_prob_raw": {
         "1": 0.0,
         "3": 0.0013,
         "5": 0.0048,
         "7": 0.0116,
         "10": 0.0241,
         "14": 0.0439
-      }
+      },
+      "touch_prob": {
+        "1": 0.0,
+        "3": 0.0008,
+        "5": 0.0029,
+        "7": 0.007,
+        "10": 0.0145,
+        "14": 0.0263
+      },
+      "calibration_haircut": 0.6
     },
     "100000": {
       "direction": "above",
       "distance_pct": 40.4,
-      "touch_prob": {
+      "touch_prob_raw": {
         "1": 0.0,
         "3": 0.0004,
         "5": 0.0017,
         "7": 0.0047,
         "10": 0.0111,
         "14": 0.0231
-      }
+      },
+      "touch_prob": {
+        "1": 0.0,
+        "3": 0.0002,
+        "5": 0.001,
+        "7": 0.0028,
+        "10": 0.0067,
+        "14": 0.0139
+      },
+      "calibration_haircut": 0.6
     }
   }
 }
