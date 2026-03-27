@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T19:58:06Z",
+  "updated_at": "2026-03-27T20:06:55Z",
   "date": "2026-03-26",
   "regime": "C",
   "day": 2,
@@ -8,6 +8,5 @@
   "cps_7d_avg": 0.4568,
   "cps_trend": "Rising",
   "trade_action": "none",
-  "active_positions": [],
-  "nav": 76783
+  "active_positions": []
 }
