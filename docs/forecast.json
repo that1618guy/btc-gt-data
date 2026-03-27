@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-27T20:36:48Z",
+  "generated_utc": "2026-03-27T20:44:27Z",
   "forecast_date": "2026-03-26",
   "start_price": 68786.63,
   "regime": "C",
@@ -289,14 +289,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $65,000 in March?",
-        "market_price_cents": 78.1,
-        "raw_edge_pp": -35.8,
-        "net_edge_pp": -33.8,
+        "market_price_cents": 76.6,
+        "raw_edge_pp": -34.3,
+        "net_edge_pp": -32.3,
         "trade_direction": "BUY NO",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"112493481455469093769281852159558847572704253342416714876781522096078968514094\", \"64087619211543545431479218048939484178441767712621033463416084593776314629222\"]",
         "condition_id": "0x36912c9832f0fd104d734b579fb9b3a1b31bbdc946a67356723407e3bdc96dbc",
-        "fetched_utc": "2026-03-27T20:36:48Z"
+        "fetched_utc": "2026-03-27T20:44:27Z"
       }
     },
     "62500": {
@@ -325,13 +325,13 @@
       "polymarket": {
         "contract": "Will Bitcoin dip to $60,000 in March?",
         "market_price_cents": 12.8,
-        "raw_edge_pp": -2.7,
-        "net_edge_pp": -0.7,
+        "raw_edge_pp": -2.6,
+        "net_edge_pp": -0.6,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"14043105760637709189447891018409043949145014678306461040633394405047072239189\", \"54889978754285077080670037685297679717001917285386523487998069756162812161763\"]",
         "condition_id": "0x4290a4aa43a0707f0f1193c73667074f2ef5ce8ab5d6fcdd4ca645bfe1528f03",
-        "fetched_utc": "2026-03-27T20:36:48Z"
+        "fetched_utc": "2026-03-27T20:44:27Z"
       }
     },
     "57500": {
@@ -359,14 +359,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $55,000 in March?",
-        "market_price_cents": 3.0,
-        "raw_edge_pp": -1.2,
-        "net_edge_pp": 0.8,
+        "market_price_cents": 3.2,
+        "raw_edge_pp": -1.4,
+        "net_edge_pp": 0.6,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"3056478011660943904461466382920934987843622145282294244222474838030938303402\", \"31457332666503427242125205478269853825083052913544120844835116364879462124092\"]",
         "condition_id": "0x84c7382fc6881416a2b07b0ebe9da32daba8be44a48623a0c3fe4b22f816431a",
-        "fetched_utc": "2026-03-27T20:36:48Z"
+        "fetched_utc": "2026-03-27T20:44:27Z"
       }
     },
     "52500": {
@@ -535,7 +535,7 @@
         "edge_label": "STRONG",
         "clob_token_ids": "[\"89985317983195116196847912662733840736741033181969862249321821942712441807494\", \"96839284769036407740491691016901048240322264125970194871307313464800669089139\"]",
         "condition_id": "0x337e5c84b83679d5557acafcf78b5c5d4d932b9fcd7dfba7966249d64f0f0a0f",
-        "fetched_utc": "2026-03-27T20:36:48Z"
+        "fetched_utc": "2026-03-27T20:44:27Z"
       }
     },
     "82500": {
