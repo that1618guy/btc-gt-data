@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-03-30T06:22:48Z",
+  "generated_utc": "2026-03-30T19:46:42Z",
   "forecast_date": "2026-03-29",
   "start_price": 65980.65,
   "regime": "D",
@@ -301,14 +301,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $60,000 in March?",
-        "market_price_cents": 2.0,
-        "raw_edge_pp": 31.3,
-        "net_edge_pp": 29.3,
+        "market_price_cents": 2.1,
+        "raw_edge_pp": 31.2,
+        "net_edge_pp": 29.2,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"14043105760637709189447891018409043949145014678306461040633394405047072239189\", \"54889978754285077080670037685297679717001917285386523487998069756162812161763\"]",
         "condition_id": "0x4290a4aa43a0707f0f1193c73667074f2ef5ce8ab5d6fcdd4ca645bfe1528f03",
-        "fetched_utc": "2026-03-30T06:22:48Z"
+        "fetched_utc": "2026-03-30T19:46:42Z"
       }
     },
     "57500": {
