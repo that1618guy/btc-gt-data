@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-16T05:55:15Z",
+  "generated_utc": "2026-04-16T06:26:40Z",
   "forecast_date": "2026-04-15",
   "start_price": 74819.73,
   "regime": "C",
@@ -320,7 +320,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"91891168804884935930999247357727984305771756132991676079520973027739343180431\", \"23855113270380715582990587090633411330393229866088109518249820735493814432534\"]",
         "condition_id": "0xf326a07132ea27d151fade9df0424db7c5ee496b44e5f373a41b4f15431bfd97",
-        "fetched_utc": "2026-04-16T05:55:15Z"
+        "fetched_utc": "2026-04-16T06:26:40Z"
       }
     },
     "62500": {
@@ -348,14 +348,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $60,000 in April?",
-        "market_price_cents": 5.5,
-        "raw_edge_pp": -1.4,
-        "net_edge_pp": 0.6,
+        "market_price_cents": 4.5,
+        "raw_edge_pp": -0.4,
+        "net_edge_pp": 1.6,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"20601138433185047637021420862349550220799550491576142117902559470990731370292\", \"80328242792706638479071069476741279296496891717925904645884590990235838658272\"]",
         "condition_id": "0x96c7650600ccaefbe0f5a0e1176073d5ab289645d7eb3c9e0da0278a5c994228",
-        "fetched_utc": "2026-04-16T05:55:15Z"
+        "fetched_utc": "2026-04-16T06:26:40Z"
       }
     },
     "57500": {
@@ -383,14 +383,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $55,000 in April?",
-        "market_price_cents": 2.2,
+        "market_price_cents": 2.3,
         "raw_edge_pp": -1.7,
         "net_edge_pp": 0.3,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"114533150716884803075105246149936754217015393452243295135987110381883243128825\", \"98354484227974208385805413591117615183062457592435385836382467699310822292145\"]",
         "condition_id": "0xd3270330a3aa96b56458b439a90f319c1d326f28476f75727d0852ef59cef5c9",
-        "fetched_utc": "2026-04-16T05:55:15Z"
+        "fetched_utc": "2026-04-16T06:26:40Z"
       }
     },
     "52500": {
@@ -425,7 +425,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"89299481759329961417805055071116824854466553859992495712953532165319207104003\", \"8453511190055161161111966870284583783342067991821830513386598719089921955145\"]",
         "condition_id": "0x5f88a260d61f6ab1cc05e8e34019121d5d65c516f33f5eac22755c3a29e20311",
-        "fetched_utc": "2026-04-16T05:55:15Z"
+        "fetched_utc": "2026-04-16T06:26:40Z"
       }
     },
     "77500": {
@@ -480,7 +480,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"22893138393795740138249503228269517733051888602506683062209713465144747482167\", \"45123884735417096581954682783281606473569151024845837886660550810645537401116\"]",
         "condition_id": "0x06a804e8bd1a539829b7db279ad33b2cf0bcf98f315a3b3a8c7623e6230d88fd",
-        "fetched_utc": "2026-04-16T05:55:15Z"
+        "fetched_utc": "2026-04-16T06:26:40Z"
       }
     },
     "82500": {
@@ -528,14 +528,14 @@
       "haircut_key": "C_early",
       "polymarket": {
         "contract": "Will Bitcoin reach $85,000 in April?",
-        "market_price_cents": 7.7,
-        "raw_edge_pp": 4.3,
-        "net_edge_pp": 2.3,
+        "market_price_cents": 7.2,
+        "raw_edge_pp": 4.8,
+        "net_edge_pp": 2.8,
         "trade_direction": "BUY YES",
         "edge_label": "THIN",
         "clob_token_ids": "[\"67399009651248931128484970624141355422398090617680818427428637927246754082167\", \"91547003902329909647829942740901074836865581535712855025431295732257332344731\"]",
         "condition_id": "0xc185f6ce2c105d6e08c258a8b222ed9091191f28a011faec54abff188ac49dae",
-        "fetched_utc": "2026-04-16T05:55:15Z"
+        "fetched_utc": "2026-04-16T06:26:40Z"
       }
     },
     "87500": {
@@ -584,13 +584,13 @@
       "polymarket": {
         "contract": "Will Bitcoin reach $90,000 in April?",
         "market_price_cents": 2.9,
-        "raw_edge_pp": 1.2,
-        "net_edge_pp": -0.8,
+        "raw_edge_pp": 1.3,
+        "net_edge_pp": -0.7,
         "trade_direction": "BUY YES",
         "edge_label": "THIN",
         "clob_token_ids": "[\"74909629577486136090941471687713840146354214637564881516382107271763571856441\", \"11674877283182395311878029890298737455444742113537051671807978956347823025159\"]",
         "condition_id": "0xe6ca9df9502600d4f652a725babeff09cd2947974d18351c18a3ba86cc985c50",
-        "fetched_utc": "2026-04-16T05:55:15Z"
+        "fetched_utc": "2026-04-16T06:26:40Z"
       }
     },
     "92500": {
@@ -635,7 +635,18 @@
         "14": 0.0144
       },
       "calibration_haircut": 0.85,
-      "haircut_key": "C_early"
+      "haircut_key": "C_early",
+      "polymarket": {
+        "contract": "Will Bitcoin reach $95,000 in April?",
+        "market_price_cents": 1.1,
+        "raw_edge_pp": 0.3,
+        "net_edge_pp": -1.7,
+        "trade_direction": "BUY YES",
+        "edge_label": "THIN",
+        "clob_token_ids": "[\"57612516068503424409812531436491258055105348275369665296475061826312365967774\", \"65339238651700243900092675500733870526238324671815065091403883691498019641301\"]",
+        "condition_id": "0xa315788fbf3b6f7a72ebc75fa28e23aba5cbb3b51500a8ce12a290249c0f1104",
+        "fetched_utc": "2026-04-16T06:26:40Z"
+      }
     },
     "97500": {
       "direction": "above",
