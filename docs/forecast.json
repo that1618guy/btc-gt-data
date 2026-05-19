@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-19T09:41:26Z",
+  "generated_utc": "2026-05-19T10:58:52Z",
   "forecast_date": "2026-05-18",
   "start_price": 76952.66,
   "regime": "C",
@@ -277,14 +277,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $75,000 in May?",
-        "market_price_cents": 69.5,
-        "raw_edge_pp": -2.5,
-        "net_edge_pp": -0.5,
+        "market_price_cents": 68.5,
+        "raw_edge_pp": -1.5,
+        "net_edge_pp": 0.5,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"85255397873237558858447685287854751130109864480350032224451058169602594241557\", \"58077353329405847288143721198487033857066664479226923794509773080249507560880\"]",
         "condition_id": "0x2de954c6acc43b5b6382dfe453c4e2e00dc9c2c8e9caf2a5752039d3c218f231",
-        "fetched_utc": "2026-05-19T09:41:26Z"
+        "fetched_utc": "2026-05-19T10:58:52Z"
       }
     },
     "72500": {
@@ -312,14 +312,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $70,000 in May?",
-        "market_price_cents": 19.0,
-        "raw_edge_pp": 10.1,
-        "net_edge_pp": 8.1,
+        "market_price_cents": 18.5,
+        "raw_edge_pp": 10.6,
+        "net_edge_pp": 8.6,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"1455516093280115266726125015118886836497350270272083258816253748264172151708\", \"95485861341380608519980927436620979639471363690968268890982766249775308601106\"]",
         "condition_id": "0x27ad7baca4066891d8e8e5a4df38b164e95b56757041a5c198d24f9cd984b877",
-        "fetched_utc": "2026-05-19T09:41:26Z"
+        "fetched_utc": "2026-05-19T10:58:52Z"
       }
     },
     "67500": {
@@ -347,14 +347,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $65,000 in May?",
-        "market_price_cents": 4.0,
-        "raw_edge_pp": 4.8,
-        "net_edge_pp": 2.8,
+        "market_price_cents": 4.2,
+        "raw_edge_pp": 4.7,
+        "net_edge_pp": 2.7,
         "trade_direction": "BUY YES",
         "edge_label": "THIN",
         "clob_token_ids": "[\"27725940653624584419402352523079290062969537031166811897465708046373420997774\", \"70599542532871511059574704954153700290799668003780454021485405353625366389155\"]",
         "condition_id": "0xde5ed16b575a0b1d100126266232653f1ba8e5709a4dd79b361491026f6cf65c",
-        "fetched_utc": "2026-05-19T09:41:26Z"
+        "fetched_utc": "2026-05-19T10:58:52Z"
       }
     },
     "62500": {
@@ -389,7 +389,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"35400870094926910350494623066652965937979705947201136654871500066876368014129\", \"9093696245212100371132031223288038049489320107926005813012285736917340443187\"]",
         "condition_id": "0xd72eb4440b11191d981c1ca0e4d363f42c84313067b3a29db721c6780218c2bf",
-        "fetched_utc": "2026-05-19T09:41:26Z"
+        "fetched_utc": "2026-05-19T10:58:52Z"
       }
     },
     "57500": {
@@ -424,7 +424,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"26395103237779454600605455242159578798818006529444534803882227088822254079013\", \"66640593927806775487523582810913028280345995994966983347515284228539247720113\"]",
         "condition_id": "0x4998a7c5897df3b9dd879cec4f62ca776cd608eacd271ffb375a84f20f4f3d9c",
-        "fetched_utc": "2026-05-19T09:41:26Z"
+        "fetched_utc": "2026-05-19T10:58:52Z"
       }
     },
     "52500": {
@@ -547,7 +547,7 @@
         "edge_label": "MODERATE",
         "clob_token_ids": "[\"27263818818572382308786837280052567231404272927433091805576135922512093801450\", \"20970486708225968446432942645112973151689471027935743232114605753310238562505\"]",
         "condition_id": "0x58078283e2356f9b9537b42e7479d7785b83bcd6f18002de8a2526c499eda837",
-        "fetched_utc": "2026-05-19T09:41:26Z"
+        "fetched_utc": "2026-05-19T10:58:52Z"
       }
     },
     "87500": {
@@ -595,14 +595,14 @@
       "haircut_key": "C_mature",
       "polymarket": {
         "contract": "Will Bitcoin reach $90,000 in May?",
-        "market_price_cents": 2.5,
-        "raw_edge_pp": 2.3,
-        "net_edge_pp": 0.3,
+        "market_price_cents": 2.2,
+        "raw_edge_pp": 2.5,
+        "net_edge_pp": 0.5,
         "trade_direction": "BUY YES",
         "edge_label": "THIN",
         "clob_token_ids": "[\"82333550650994719016339808110389313847426073918923886033931546451300666500527\", \"65358559479619632690055959333044473452303412483016001023035774148763874619559\"]",
         "condition_id": "0x12587fe0cd6aa29260510a658db7d3e03de052bbc9d77ec29fbc4579a0999db1",
-        "fetched_utc": "2026-05-19T09:41:26Z"
+        "fetched_utc": "2026-05-19T10:58:52Z"
       }
     },
     "92500": {
@@ -647,18 +647,7 @@
         "14": 0.0163
       },
       "calibration_haircut": 0.5,
-      "haircut_key": "C_mature",
-      "polymarket": {
-        "contract": "Will Bitcoin reach $95,000 in May?",
-        "market_price_cents": 1.1,
-        "raw_edge_pp": 0.6,
-        "net_edge_pp": -1.4,
-        "trade_direction": "BUY YES",
-        "edge_label": "THIN",
-        "clob_token_ids": "[\"75068694519235284923554014292149365814905672168186840117079081703620417733601\", \"16860625162494210689460390678673570106526806365249676317752175720098998598727\"]",
-        "condition_id": "0x40e923d788caaed2066daac648f76bbf8dbf04177e248724b4103467ae66d2ff",
-        "fetched_utc": "2026-05-19T09:41:26Z"
-      }
+      "haircut_key": "C_mature"
     },
     "97500": {
       "direction": "above",
