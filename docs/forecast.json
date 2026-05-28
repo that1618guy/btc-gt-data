@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-28T07:45:47Z",
+  "generated_utc": "2026-05-28T08:37:02Z",
   "forecast_date": "2026-05-27",
   "start_price": 74324.82,
   "regime": "C",
@@ -277,14 +277,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $72,500 in May?",
-        "market_price_cents": 68.5,
-        "raw_edge_pp": -7.4,
-        "net_edge_pp": -5.4,
+        "market_price_cents": 75.0,
+        "raw_edge_pp": -13.9,
+        "net_edge_pp": -11.9,
         "trade_direction": "BUY NO",
-        "edge_label": "MODERATE",
+        "edge_label": "STRONG",
         "clob_token_ids": "[\"4359337221976112768153320757469285028710364153933658257119631413287841808932\", \"72561681562752807204440723510542428554177127254755262676597978748589128812538\"]",
         "condition_id": "0xba748fe5b263077b102337ad026180a998a230996a8b108e6d0418b869e7529d",
-        "fetched_utc": "2026-05-28T07:45:47Z"
+        "fetched_utc": "2026-05-28T08:37:02Z"
       }
     },
     "70000": {
@@ -300,14 +300,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $70,000 in May?",
-        "market_price_cents": 18.2,
-        "raw_edge_pp": 18.5,
-        "net_edge_pp": 16.5,
+        "market_price_cents": 19.4,
+        "raw_edge_pp": 17.3,
+        "net_edge_pp": 15.3,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"1455516093280115266726125015118886836497350270272083258816253748264172151708\", \"95485861341380608519980927436620979639471363690968268890982766249775308601106\"]",
         "condition_id": "0x27ad7baca4066891d8e8e5a4df38b164e95b56757041a5c198d24f9cd984b877",
-        "fetched_utc": "2026-05-28T07:45:47Z"
+        "fetched_utc": "2026-05-28T08:37:02Z"
       }
     },
     "67500": {
@@ -336,13 +336,13 @@
       "polymarket": {
         "contract": "Will Bitcoin dip to $65,000 in May?",
         "market_price_cents": 1.8,
-        "raw_edge_pp": 9.7,
-        "net_edge_pp": 7.7,
+        "raw_edge_pp": 9.8,
+        "net_edge_pp": 7.8,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"27725940653624584419402352523079290062969537031166811897465708046373420997774\", \"70599542532871511059574704954153700290799668003780454021485405353625366389155\"]",
         "condition_id": "0xde5ed16b575a0b1d100126266232653f1ba8e5709a4dd79b361491026f6cf65c",
-        "fetched_utc": "2026-05-28T07:45:47Z"
+        "fetched_utc": "2026-05-28T08:37:02Z"
       }
     },
     "62500": {
@@ -462,14 +462,14 @@
       "haircut_key": "C_mature",
       "polymarket": {
         "contract": "Will Bitcoin reach $77,500 in May?",
-        "market_price_cents": 9.0,
-        "raw_edge_pp": 41.7,
-        "net_edge_pp": 39.7,
+        "market_price_cents": 8.5,
+        "raw_edge_pp": 42.2,
+        "net_edge_pp": 40.2,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"67413218765190245884914241512447625713957781765835828823111873031977826016795\", \"7893990861050286796829166474617203296101516522112659298561743034590508559620\"]",
         "condition_id": "0x60e3040779d2493128281cf0f5ae14be765777c501f8af86232ceec09dba49f2",
-        "fetched_utc": "2026-05-28T07:45:47Z"
+        "fetched_utc": "2026-05-28T08:37:02Z"
       }
     },
     "80000": {
@@ -492,18 +492,7 @@
         "14": 0.3095
       },
       "calibration_haircut": 0.75,
-      "haircut_key": "C_mature",
-      "polymarket": {
-        "contract": "Will Bitcoin reach $80,000 in May?",
-        "market_price_cents": 1.4,
-        "raw_edge_pp": 29.5,
-        "net_edge_pp": 27.5,
-        "trade_direction": "BUY YES",
-        "edge_label": "STRONG",
-        "clob_token_ids": "[\"25687642315215774658675668944789881575535949485195977628703143756137335472019\", \"92866620325153126477001829612719796281124816276270655404185833648472044596\"]",
-        "condition_id": "0xbfda04cc145c9bd504e12be79d04cd7550d07bf2c13df078f9d917a2785551e0",
-        "fetched_utc": "2026-05-28T07:45:47Z"
-      }
+      "haircut_key": "C_mature"
     },
     "82500": {
       "direction": "above",
