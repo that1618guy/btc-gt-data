@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-06-10T08:41:10Z",
+  "generated_utc": "2026-06-10T09:58:43Z",
   "forecast_date": "2026-06-09",
   "start_price": 61676.6,
   "regime": "C",
@@ -289,14 +289,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $57,500 in June?",
-        "market_price_cents": 54.9,
-        "raw_edge_pp": -24.6,
-        "net_edge_pp": -22.6,
+        "market_price_cents": 59.4,
+        "raw_edge_pp": -29.1,
+        "net_edge_pp": -27.1,
         "trade_direction": "BUY NO",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"1294301106000867191772806529332889741277848776146041262771462884723167975461\", \"34504729363024343583013660428932205185055548965145764880893083922924931357463\"]",
         "condition_id": "0x6992fdf39435fb8aa0b765e24f98cb621fd1f7b6458865387c0ea303da2f0003",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "55000": {
@@ -312,14 +312,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $55,000 in June?",
-        "market_price_cents": 31.8,
-        "raw_edge_pp": -16.5,
-        "net_edge_pp": -14.5,
+        "market_price_cents": 35.8,
+        "raw_edge_pp": -20.5,
+        "net_edge_pp": -18.5,
         "trade_direction": "BUY NO",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"67468426477709602554310208148215284365777653659253739974001179907439821099486\", \"99804635419555197078065585213516018464463225558341419098869403631831980757387\"]",
         "condition_id": "0xadebd6bbf401c9509dd2e78b65a16b567f1f386dccd8cac86cd389bb53ec3a58",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "52500": {
@@ -335,14 +335,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $52,500 in June?",
-        "market_price_cents": 21.4,
-        "raw_edge_pp": -14.5,
-        "net_edge_pp": -12.5,
+        "market_price_cents": 23.9,
+        "raw_edge_pp": -17.0,
+        "net_edge_pp": -15.0,
         "trade_direction": "BUY NO",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"40924372452194894059824027978502035824140061227534345603992680050027534637928\", \"85402997443158156096579111787705083261516798963209699105184282976927475958660\"]",
         "condition_id": "0xc6d651e1f7f9fc47f0079c1fba2fc18290cd8a45644f76f73ef7a1ae35f8d65f",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "50000": {
@@ -358,14 +358,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $50,000 in June?",
-        "market_price_cents": 14.0,
-        "raw_edge_pp": -11.1,
-        "net_edge_pp": -9.1,
+        "market_price_cents": 16.6,
+        "raw_edge_pp": -13.7,
+        "net_edge_pp": -11.7,
         "trade_direction": "BUY NO",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"101749127545307491315927590716033451355094513383289265062364696516616310276618\", \"45411970322524842806915640335600534752913756047752974033824217098947822865264\"]",
         "condition_id": "0xd61673fdbb2e2ceeeeb7ec4fbaba10859e59cbb4abc311779c114e18dbadfb1b",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "47500": {
@@ -381,14 +381,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $47,500 in June?",
-        "market_price_cents": 6.6,
-        "raw_edge_pp": -5.4,
-        "net_edge_pp": -3.4,
+        "market_price_cents": 7.1,
+        "raw_edge_pp": -6.0,
+        "net_edge_pp": -4.0,
         "trade_direction": "BUY NO",
         "edge_label": "MODERATE",
         "clob_token_ids": "[\"66688570202680980348054371425878724386180439159820402142886790910165609540845\", \"38888545447178587736651600562005787233364986863136821825137462499182092188458\"]",
         "condition_id": "0xe8c4faf45974a68fa5b72d7bb52012a249357454f17235f14e310dc4bb526a99",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "45000": {
@@ -472,14 +472,14 @@
       "haircut_key": "C_mature",
       "polymarket": {
         "contract": "Will Bitcoin reach $65,000 in June?",
-        "market_price_cents": 58.5,
-        "raw_edge_pp": -12.8,
-        "net_edge_pp": -10.8,
+        "market_price_cents": 56.5,
+        "raw_edge_pp": -10.8,
+        "net_edge_pp": -8.8,
         "trade_direction": "BUY NO",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"69175087284486202994111335535637728291750947919255936848724793243243276248669\", \"27317905692788065287960553717752742573552293563591016376715314559407381596341\"]",
         "condition_id": "0x8adf44c2a9ad49ff2fac27a9bca60ec01936dea6caf319001bfde339c74ba5f7",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "67500": {
@@ -512,7 +512,7 @@
         "edge_label": "STRONG",
         "clob_token_ids": "[\"16135877431493446607671189039636933475006610052936539113372827096084184825048\", \"1174657120851199897775973255525926187306668555986864431910025146987168276776\"]",
         "condition_id": "0x75a50ed92507226816900d6da63984b4db752ad3a3f73e691514416cc5ccd980",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "70000": {
@@ -545,7 +545,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"96548511608531276140022106245524012237627826583440698374093865804434851676759\", \"104473242954537602965797687907408162364810182213283197246730291096424025733323\"]",
         "condition_id": "0xce6f2c7437b15b808a6be3ea61fc125077e35ce7cc55b66fdbf15f7ce22493ea",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "72500": {
@@ -571,14 +571,14 @@
       "haircut_key": "C_mature",
       "polymarket": {
         "contract": "Will Bitcoin reach $72,500 in June?",
-        "market_price_cents": 8.5,
-        "raw_edge_pp": -3.1,
-        "net_edge_pp": -1.1,
+        "market_price_cents": 9.5,
+        "raw_edge_pp": -4.1,
+        "net_edge_pp": -2.1,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"114106814786679865555224990919710662810138557505613183181168746100592963561\", \"100476011491707614461709128586942396443456302829570944693243268501235514248307\"]",
         "condition_id": "0x04fe95ce83c8fbb73697063c6339a2a1b65d27a5d8b495898a84d5ba67627aed",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "75000": {
@@ -604,14 +604,14 @@
       "haircut_key": "C_mature",
       "polymarket": {
         "contract": "Will Bitcoin reach $75,000 in June?",
-        "market_price_cents": 6.5,
-        "raw_edge_pp": -3.7,
-        "net_edge_pp": -1.7,
+        "market_price_cents": 5.5,
+        "raw_edge_pp": -2.7,
+        "net_edge_pp": -0.7,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"48332353263209856297140951951582484713615312654288684259463415838226979964883\", \"17917452072908550301599996459510756193434423718426429660038589950169083427006\"]",
         "condition_id": "0x99e5c683143a52e9f129ba97bd9d05a44435008296ac5f148735109a215e5c92",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "77500": {
@@ -637,14 +637,14 @@
       "haircut_key": "C_mature",
       "polymarket": {
         "contract": "Will Bitcoin reach $77,500 in June?",
-        "market_price_cents": 3.2,
-        "raw_edge_pp": -1.8,
-        "net_edge_pp": 0.2,
+        "market_price_cents": 3.5,
+        "raw_edge_pp": -2.0,
+        "net_edge_pp": 0.0,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"53408016497758924198709136470747964782847396202543477367404976341001811616691\", \"8733380432616241618235610604724150826102379896635476016295549555881291393424\"]",
         "condition_id": "0x2e539df5355cdb2ea8340beb000a0c6689957e1bb58f748abd18b4c7485a363a",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "80000": {
@@ -677,7 +677,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"109099531144652360435343160941774664834598341381312740936111718566708375107004\", \"4215578813914535814878552266000926691268257553672347611134177382345331575097\"]",
         "condition_id": "0x28799fda784f6b7f9e838c80d03389973167f102fd1db3f4efb5af6ea19b32ad",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     },
     "82500": {
@@ -710,7 +710,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"61500591812641370997958058565614570749858280386557944455333972770618552171659\", \"51653743901539436783448835613968795453855628475322784500233762380386237644831\"]",
         "condition_id": "0xc3c410d20641575d5e87f5cf03d83e6ea6d681d0ca9b4c409653d50eb7127dc2",
-        "fetched_utc": "2026-06-10T08:41:10Z"
+        "fetched_utc": "2026-06-10T09:58:43Z"
       }
     }
   }
