@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-06-28T10:24:15Z",
+  "generated_utc": "2026-06-28T11:50:48Z",
   "forecast_date": "2026-06-27",
   "start_price": 59986.87,
   "regime": "C",
@@ -277,14 +277,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $57,500 in June?",
-        "market_price_cents": 28.1,
-        "raw_edge_pp": 17.7,
-        "net_edge_pp": 15.7,
+        "market_price_cents": 27.4,
+        "raw_edge_pp": 18.4,
+        "net_edge_pp": 16.4,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"1294301106000867191772806529332889741277848776146041262771462884723167975461\", \"34504729363024343583013660428932205185055548965145764880893083922924931357463\"]",
         "condition_id": "0x6992fdf39435fb8aa0b765e24f98cb621fd1f7b6458865387c0ea303da2f0003",
-        "fetched_utc": "2026-06-28T10:24:15Z"
+        "fetched_utc": "2026-06-28T11:50:48Z"
       }
     },
     "55000": {
@@ -300,14 +300,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $55,000 in June?",
-        "market_price_cents": 5.8,
-        "raw_edge_pp": 17.8,
-        "net_edge_pp": 15.8,
+        "market_price_cents": 5.5,
+        "raw_edge_pp": 18.0,
+        "net_edge_pp": 16.0,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"67468426477709602554310208148215284365777653659253739974001179907439821099486\", \"99804635419555197078065585213516018464463225558341419098869403631831980757387\"]",
         "condition_id": "0xadebd6bbf401c9509dd2e78b65a16b567f1f386dccd8cac86cd389bb53ec3a58",
-        "fetched_utc": "2026-06-28T10:24:15Z"
+        "fetched_utc": "2026-06-28T11:50:48Z"
       }
     },
     "52500": {
@@ -330,7 +330,7 @@
         "edge_label": "STRONG",
         "clob_token_ids": "[\"40924372452194894059824027978502035824140061227534345603992680050027534637928\", \"85402997443158156096579111787705083261516798963209699105184282976927475958660\"]",
         "condition_id": "0xc6d651e1f7f9fc47f0079c1fba2fc18290cd8a45644f76f73ef7a1ae35f8d65f",
-        "fetched_utc": "2026-06-28T10:24:15Z"
+        "fetched_utc": "2026-06-28T11:50:48Z"
       }
     },
     "50000": {
@@ -438,14 +438,14 @@
       "haircut_key": "C_mature",
       "polymarket": {
         "contract": "Will Bitcoin reach $62,500 in June?",
-        "market_price_cents": 35.5,
-        "raw_edge_pp": 16.6,
-        "net_edge_pp": 14.6,
+        "market_price_cents": 34.5,
+        "raw_edge_pp": 17.6,
+        "net_edge_pp": 15.6,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"52600467739335064840939375259811241635353456495054292682065352920559611492325\", \"91276246690692335397922550615546813926298187980962376479653615469296052837331\"]",
         "condition_id": "0x2d776edce6e8286dc3cd2befc7290961a4af1ae3dfe91e8a3fa61dbf372ec1a7",
-        "fetched_utc": "2026-06-28T10:24:15Z"
+        "fetched_utc": "2026-06-28T11:50:48Z"
       }
     },
     "65000": {
@@ -471,14 +471,14 @@
       "haircut_key": "C_mature",
       "polymarket": {
         "contract": "Will Bitcoin reach $65,000 in June?",
-        "market_price_cents": 5.0,
-        "raw_edge_pp": 24.0,
-        "net_edge_pp": 22.0,
+        "market_price_cents": 4.8,
+        "raw_edge_pp": 24.2,
+        "net_edge_pp": 22.2,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"23592255901540647994832454677673747059192514222325677396328431914729868655983\", \"73279071263618479380900872286440969565548432647042242447738674887517164283908\"]",
         "condition_id": "0x237f3ae164efd4ee89484c318a07e598c17ce6c9b327a5b76da9062076199a08",
-        "fetched_utc": "2026-06-28T10:24:15Z"
+        "fetched_utc": "2026-06-28T11:50:48Z"
       }
     },
     "67500": {
@@ -501,7 +501,18 @@
         "14": 0.1458
       },
       "calibration_haircut": 0.65,
-      "haircut_key": "C_mature"
+      "haircut_key": "C_mature",
+      "polymarket": {
+        "contract": "Will Bitcoin reach $67,500 in June?",
+        "market_price_cents": 1.1,
+        "raw_edge_pp": 13.5,
+        "net_edge_pp": 11.5,
+        "trade_direction": "BUY YES",
+        "edge_label": "STRONG",
+        "clob_token_ids": "[\"16135877431493446607671189039636933475006610052936539113372827096084184825048\", \"1174657120851199897775973255525926187306668555986864431910025146987168276776\"]",
+        "condition_id": "0x75a50ed92507226816900d6da63984b4db752ad3a3f73e691514416cc5ccd980",
+        "fetched_utc": "2026-06-28T11:50:48Z"
+      }
     },
     "70000": {
       "direction": "above",
