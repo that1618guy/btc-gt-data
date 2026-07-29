@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-29T06:00:57Z",
+  "generated_utc": "2026-07-29T06:22:43Z",
   "forecast_date": "2026-07-28",
   "start_price": 63861.5,
   "regime": "C",
@@ -277,14 +277,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $62,500 in July?",
-        "market_price_cents": 43.8,
-        "raw_edge_pp": 18.0,
-        "net_edge_pp": 16.0,
+        "market_price_cents": 43.0,
+        "raw_edge_pp": 18.7,
+        "net_edge_pp": 16.7,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"20767774629957089451380232064378889923796792339033424837473107341428141867152\", \"110392912114474015215799989316265603068880491141189415130753215877084979700406\"]",
         "condition_id": "0x14ea3802ada17265002bff37ddc4ea65014d3e37cb80ef2ea8aa2f588a5f78bc",
-        "fetched_utc": "2026-07-29T06:00:57Z"
+        "fetched_utc": "2026-07-29T06:22:43Z"
       }
     },
     "60000": {
@@ -300,14 +300,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $60,000 in July?",
-        "market_price_cents": 10.5,
-        "raw_edge_pp": 23.1,
-        "net_edge_pp": 21.1,
+        "market_price_cents": 8.5,
+        "raw_edge_pp": 25.1,
+        "net_edge_pp": 23.1,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"76775375296033651317898012041289573382116059705683933691523480898942221844797\", \"18003564518755876597430706411417865441386293166027128009342507707247056749212\"]",
         "condition_id": "0x9acc543deb6148979bcf1433326d3c87058183b444e9dc39bab7bced0252c52a",
-        "fetched_utc": "2026-07-29T06:00:57Z"
+        "fetched_utc": "2026-07-29T06:22:43Z"
       }
     },
     "57500": {
@@ -330,7 +330,7 @@
         "edge_label": "STRONG",
         "clob_token_ids": "[\"51648990218544067436174137903077674890968483826939063393064351432982359534477\", \"76489196366809276678703167395741335062889477749411701459047587268289649419879\"]",
         "condition_id": "0x2be031440c5a571cd4fc3e05e2478d98aee41c7a44d10d3c5e6a24e38b30fabb",
-        "fetched_utc": "2026-07-29T06:00:57Z"
+        "fetched_utc": "2026-07-29T06:22:43Z"
       }
     },
     "55000": {
@@ -428,14 +428,14 @@
       "haircut_key": "C_mature",
       "polymarket": {
         "contract": "Will Bitcoin reach $65,000 in July?",
-        "market_price_cents": 55.5,
-        "raw_edge_pp": 16.9,
-        "net_edge_pp": 14.9,
+        "market_price_cents": 61.0,
+        "raw_edge_pp": 11.4,
+        "net_edge_pp": 9.4,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"45815733425907789557480672476530971386129611629662461691050940756180902729852\", \"3323225808112289747779266385374482216510109199208560484844529058287708828615\"]",
         "condition_id": "0xddcb43ad492c73b19e209a8dad0ed88b65bdafb90c1a626be13983ffd8202902",
-        "fetched_utc": "2026-07-29T06:00:57Z"
+        "fetched_utc": "2026-07-29T06:22:43Z"
       }
     },
     "67500": {
@@ -468,7 +468,7 @@
         "edge_label": "STRONG",
         "clob_token_ids": "[\"70060007759742302808850203923230495967841006347410479320265457231119910877637\", \"94252409631375149642232709930779092548259642333831512866206597068377247772631\"]",
         "condition_id": "0xbe20fcfd54937c2a48a7b8521ca349e6a2c4373566328ebb950a8c35ab1be3d9",
-        "fetched_utc": "2026-07-29T06:00:57Z"
+        "fetched_utc": "2026-07-29T06:22:43Z"
       }
     },
     "70000": {
@@ -491,7 +491,18 @@
         "14": 0.2112
       },
       "calibration_haircut": 0.65,
-      "haircut_key": "C_mature"
+      "haircut_key": "C_mature",
+      "polymarket": {
+        "contract": "Will Bitcoin reach $70,000 in July?",
+        "market_price_cents": 1.1,
+        "raw_edge_pp": 20.0,
+        "net_edge_pp": 18.0,
+        "trade_direction": "BUY YES",
+        "edge_label": "STRONG",
+        "clob_token_ids": "[\"103306680198948704554599811183197844953598147952241074674297011149394308706028\", \"92816915429998265485709440266340158621084369220656661191529847288128743404723\"]",
+        "condition_id": "0xe284a52d608552290b056def0a62e1914b3ebe316407504f56f6361fafc68358",
+        "fetched_utc": "2026-07-29T06:22:43Z"
+      }
     },
     "72500": {
       "direction": "above",
