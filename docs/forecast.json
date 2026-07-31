@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-31T13:53:06Z",
+  "generated_utc": "2026-07-31T16:00:31Z",
   "forecast_date": "2026-07-30",
   "start_price": 64723.22,
   "regime": "C",
@@ -274,17 +274,6 @@
         "7": 0.3715,
         "10": 0.4463,
         "14": 0.513
-      },
-      "polymarket": {
-        "contract": "Will Bitcoin dip to $62,500 in July?",
-        "market_price_cents": 28.2,
-        "raw_edge_pp": 23.1,
-        "net_edge_pp": 21.1,
-        "trade_direction": "BUY YES",
-        "edge_label": "STRONG",
-        "clob_token_ids": "[\"20767774629957089451380232064378889923796792339033424837473107341428141867152\", \"110392912114474015215799989316265603068880491141189415130753215877084979700406\"]",
-        "condition_id": "0x14ea3802ada17265002bff37ddc4ea65014d3e37cb80ef2ea8aa2f588a5f78bc",
-        "fetched_utc": "2026-07-31T13:53:06Z"
       }
     },
     "60000": {
@@ -297,6 +286,17 @@
         "7": 0.1435,
         "10": 0.208,
         "14": 0.2763
+      },
+      "polymarket": {
+        "contract": "Will Bitcoin dip to $60,000 in July?",
+        "market_price_cents": 1.6,
+        "raw_edge_pp": 26.1,
+        "net_edge_pp": 24.1,
+        "trade_direction": "BUY YES",
+        "edge_label": "STRONG",
+        "clob_token_ids": "[\"76775375296033651317898012041289573382116059705683933691523480898942221844797\", \"18003564518755876597430706411417865441386293166027128009342507707247056749212\"]",
+        "condition_id": "0x9acc543deb6148979bcf1433326d3c87058183b444e9dc39bab7bced0252c52a",
+        "fetched_utc": "2026-07-31T16:00:31Z"
       }
     },
     "57500": {
