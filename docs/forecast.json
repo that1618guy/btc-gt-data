@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-31T07:00:37Z",
+  "generated_utc": "2026-07-31T07:42:25Z",
   "forecast_date": "2026-07-30",
   "start_price": 64723.22,
   "regime": "C",
@@ -277,14 +277,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $62,500 in July?",
-        "market_price_cents": 7.0,
-        "raw_edge_pp": 44.2,
-        "net_edge_pp": 42.2,
+        "market_price_cents": 13.4,
+        "raw_edge_pp": 38.0,
+        "net_edge_pp": 36.0,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"20767774629957089451380232064378889923796792339033424837473107341428141867152\", \"110392912114474015215799989316265603068880491141189415130753215877084979700406\"]",
         "condition_id": "0x14ea3802ada17265002bff37ddc4ea65014d3e37cb80ef2ea8aa2f588a5f78bc",
-        "fetched_utc": "2026-07-31T07:00:37Z"
+        "fetched_utc": "2026-07-31T07:42:25Z"
       }
     },
     "60000": {
