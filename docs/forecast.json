@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-20T05:00:45Z",
+  "generated_utc": "2026-08-20T05:19:17Z",
   "forecast_date": "2026-08-19",
   "start_price": 69285.61,
   "regime": "Mixed",
@@ -277,14 +277,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $67,500 in August?",
-        "market_price_cents": 62.0,
-        "raw_edge_pp": 5.9,
-        "net_edge_pp": 3.9,
+        "market_price_cents": 59.5,
+        "raw_edge_pp": 8.4,
+        "net_edge_pp": 6.4,
         "trade_direction": "BUY YES",
         "edge_label": "MODERATE",
         "clob_token_ids": "[\"45349201673033527447768645359864385869991777646128023206959790874029348120325\", \"114164493552879240550271565524839915538752736592211473199394767812525666184429\"]",
         "condition_id": "0x10c4cebc5321a6aed969e702847cb2585eaddebbcf8e5f50cc7fffa450901252",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "65000": {
@@ -300,14 +300,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $65,000 in August?",
-        "market_price_cents": 30.5,
-        "raw_edge_pp": 17.3,
-        "net_edge_pp": 15.3,
+        "market_price_cents": 26.5,
+        "raw_edge_pp": 21.3,
+        "net_edge_pp": 19.3,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"43898757872820987638297146930820621323643875433360934741436059076419637367671\", \"44313886270159822991000712162861406239794891120292790692081287584865570784926\"]",
         "condition_id": "0xe5463afaa79590b9c48094e031791ccc575b51936ab1a4b260f8ca0e8ed2c48b",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "62500": {
@@ -323,14 +323,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $62,500 in August?",
-        "market_price_cents": 9.2,
-        "raw_edge_pp": 21.4,
-        "net_edge_pp": 19.4,
+        "market_price_cents": 9.3,
+        "raw_edge_pp": 21.3,
+        "net_edge_pp": 19.3,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"97454153157320890301565733152088528189410505166162922730489352561967591530343\", \"33333273554626504726239290447986373910980207517932110384152813384230308114374\"]",
         "condition_id": "0xe7db5d31d8ce10fad03ffc9ccea14496cf038438e7c26b36300230cf91fc32ec",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "60000": {
@@ -346,14 +346,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $60,000 in August?",
-        "market_price_cents": 4.2,
-        "raw_edge_pp": 14.6,
-        "net_edge_pp": 12.6,
+        "market_price_cents": 4.0,
+        "raw_edge_pp": 14.7,
+        "net_edge_pp": 12.7,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"88902974378195889166057110964513688920047250482309636378282580896757420591128\", \"27073303004572553849637491269750009119441121163110046345436572485239448486478\"]",
         "condition_id": "0x211f2f58d38d8022f3d71a99685ebec3ff12a396118c38e8fb97fdcab53ded1e",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "57500": {
@@ -376,7 +376,7 @@
         "edge_label": "MODERATE",
         "clob_token_ids": "[\"105934924793101961671194607931144938442778142774865876808979595111561162727678\", \"8881400370038397971838140193303727239318785128034801687960768890227554347129\"]",
         "condition_id": "0xc4b7c43934d27a6b2dfd784ea1a793e541d6a1f82a5eca6d74f184a1c4c30fc9",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "55000": {
@@ -392,14 +392,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $55,000 in August?",
-        "market_price_cents": 1.2,
-        "raw_edge_pp": 4.5,
-        "net_edge_pp": 2.5,
+        "market_price_cents": 1.3,
+        "raw_edge_pp": 4.4,
+        "net_edge_pp": 2.4,
         "trade_direction": "BUY YES",
         "edge_label": "THIN",
         "clob_token_ids": "[\"70459296325871889453156773347249996978545476708208151499368447748521658358017\", \"68400022093573165474037038700563901937737223661702772285033991069743666651631\"]",
         "condition_id": "0x4d250b591dd7b7ffec3a518c1c83fc757f91d801762e868252c482d1f4d18896",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "52500": {
@@ -495,14 +495,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $72,500 in August?",
-        "market_price_cents": 45.2,
-        "raw_edge_pp": -2.9,
-        "net_edge_pp": -0.9,
+        "market_price_cents": 43.2,
+        "raw_edge_pp": -1.0,
+        "net_edge_pp": 1.0,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"63777258880233969161552040740657214803720763923675808082556752399673335048100\", \"3523185360721264825343984255310084370838660506037437952256021216614715901678\"]",
         "condition_id": "0xfd13c67069e83a4a8ba1ba425f259185bcbae282c4f91074646e3c5cf97b7ae3",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "75000": {
@@ -528,14 +528,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $75,000 in August?",
-        "market_price_cents": 21.1,
-        "raw_edge_pp": -1.1,
-        "net_edge_pp": 0.9,
+        "market_price_cents": 21.4,
+        "raw_edge_pp": -1.4,
+        "net_edge_pp": 0.6,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"19825309238856053774459620155846397094312049745253767781808796130734310092365\", \"99193402698786153903037142574246961500688006141238689215522711150641620956232\"]",
         "condition_id": "0xc4bde1d397625e1990fec7f787b9eb2e5727c666d0480c4e9c96b0dbd12602c6",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "77500": {
@@ -568,7 +568,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"943687264912098431659767041328297708450836082187223611861894294547938480319\", \"103417228643284605225980118222657775890797274380965374393593489029290863219839\"]",
         "condition_id": "0x7e2122d54359f590e9ffdf59092f8e052f5f718181188fef5534e62402f0bab3",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "80000": {
@@ -601,7 +601,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"102270650225797845195454805763498397874386067232149902550118294787057200324741\", \"64478635303158657772575591917029359342211243923030652153658368129165259566465\"]",
         "condition_id": "0xfd105823dbf627e8a57aa1924703ef23138050d9d8da4a98a5136ea2ad98acd4",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "82500": {
@@ -634,7 +634,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"58559007481908595732343519640998477965598707756438174409311033318259996889965\", \"13576797372052082172912824552784881300282311978451188365339492388428956948498\"]",
         "condition_id": "0x55ae2f91bba959ea0ab4ecbbfa2eb3501a12fd5f7107f0d71415e76cbf9a7d11",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "85000": {
@@ -660,14 +660,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $85,000 in August?",
-        "market_price_cents": 1.8,
-        "raw_edge_pp": 1.3,
-        "net_edge_pp": -0.7,
+        "market_price_cents": 1.9,
+        "raw_edge_pp": 1.2,
+        "net_edge_pp": -0.8,
         "trade_direction": "BUY YES",
         "edge_label": "THIN",
         "clob_token_ids": "[\"112241751071174396487292868128075924275858867204192436670566953710907627910138\", \"76435489421360220749181728696625335784490213562522143870042360098903372096319\"]",
         "condition_id": "0x7f668805bfee7909997562f60489ddef01e40a3dca43781efeb59ce380779295",
-        "fetched_utc": "2026-08-20T05:00:45Z"
+        "fetched_utc": "2026-08-20T05:19:17Z"
       }
     },
     "87500": {
