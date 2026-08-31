@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-31T17:29:50Z",
+  "generated_utc": "2026-08-31T18:39:52Z",
   "forecast_date": "2026-08-30",
   "start_price": 77684.39,
   "regime": "C",
@@ -274,17 +274,6 @@
         "7": 0.3376,
         "10": 0.4155,
         "14": 0.4841
-      },
-      "polymarket": {
-        "contract": "Will Bitcoin dip to $75,000 in August?",
-        "market_price_cents": 1.4,
-        "raw_edge_pp": 47.0,
-        "net_edge_pp": 45.0,
-        "trade_direction": "BUY YES",
-        "edge_label": "STRONG",
-        "clob_token_ids": "[\"52967959241395817429602158891216394752909947915176073432962965400546600207163\", \"33845737663413960170985492786440998521551287949819743740394448926263971272381\"]",
-        "condition_id": "0x5c661c21175bc9d17e40368caaf5a835daffd47b70a0e0c4504dde970e6b0d3f",
-        "fetched_utc": "2026-08-31T17:29:50Z"
       }
     },
     "72500": {
@@ -418,14 +407,14 @@
       "haircut_key": "C_early",
       "polymarket": {
         "contract": "Will Bitcoin reach $80,000 in August?",
-        "market_price_cents": 9.5,
-        "raw_edge_pp": 65.4,
-        "net_edge_pp": 63.4,
+        "market_price_cents": 13.5,
+        "raw_edge_pp": 61.4,
+        "net_edge_pp": 59.4,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"56164455570252326223230108705520239369498485700090339884257384687834000075314\", \"4637795543195949251552327206874787994351587830091699916381347808615298403497\"]",
         "condition_id": "0xa768cef4415e7224857f8e605c1783f953b5fda7d5b19132740550152f7ed57b",
-        "fetched_utc": "2026-08-31T17:29:50Z"
+        "fetched_utc": "2026-08-31T18:39:52Z"
       }
     },
     "82500": {
@@ -451,14 +440,14 @@
       "haircut_key": "C_early",
       "polymarket": {
         "contract": "Will Bitcoin reach $82,500 in August?",
-        "market_price_cents": 1.1,
-        "raw_edge_pp": 52.3,
-        "net_edge_pp": 50.3,
+        "market_price_cents": 1.4,
+        "raw_edge_pp": 52.1,
+        "net_edge_pp": 50.1,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"58559007481908595732343519640998477965598707756438174409311033318259996889965\", \"13576797372052082172912824552784881300282311978451188365339492388428956948498\"]",
         "condition_id": "0x55ae2f91bba959ea0ab4ecbbfa2eb3501a12fd5f7107f0d71415e76cbf9a7d11",
-        "fetched_utc": "2026-08-31T17:29:50Z"
+        "fetched_utc": "2026-08-31T18:39:52Z"
       }
     },
     "85000": {
