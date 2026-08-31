@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-31T18:39:52Z",
+  "generated_utc": "2026-08-31T19:49:31Z",
   "forecast_date": "2026-08-30",
   "start_price": 77684.39,
   "regime": "C",
@@ -414,7 +414,7 @@
         "edge_label": "STRONG",
         "clob_token_ids": "[\"56164455570252326223230108705520239369498485700090339884257384687834000075314\", \"4637795543195949251552327206874787994351587830091699916381347808615298403497\"]",
         "condition_id": "0xa768cef4415e7224857f8e605c1783f953b5fda7d5b19132740550152f7ed57b",
-        "fetched_utc": "2026-08-31T18:39:52Z"
+        "fetched_utc": "2026-08-31T19:49:31Z"
       }
     },
     "82500": {
@@ -440,14 +440,14 @@
       "haircut_key": "C_early",
       "polymarket": {
         "contract": "Will Bitcoin reach $82,500 in August?",
-        "market_price_cents": 1.4,
-        "raw_edge_pp": 52.1,
-        "net_edge_pp": 50.1,
+        "market_price_cents": 1.1,
+        "raw_edge_pp": 52.4,
+        "net_edge_pp": 50.4,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"58559007481908595732343519640998477965598707756438174409311033318259996889965\", \"13576797372052082172912824552784881300282311978451188365339492388428956948498\"]",
         "condition_id": "0x55ae2f91bba959ea0ab4ecbbfa2eb3501a12fd5f7107f0d71415e76cbf9a7d11",
-        "fetched_utc": "2026-08-31T18:39:52Z"
+        "fetched_utc": "2026-08-31T19:49:31Z"
       }
     },
     "85000": {
