@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-30T16:20:44Z",
+  "generated_utc": "2026-09-30T17:29:40Z",
   "forecast_date": "2026-09-29",
   "start_price": 83638.34,
   "regime": "C",
@@ -277,14 +277,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $82,500 in September?",
-        "market_price_cents": 6.4,
-        "raw_edge_pp": 61.7,
-        "net_edge_pp": 59.7,
+        "market_price_cents": 8.8,
+        "raw_edge_pp": 59.3,
+        "net_edge_pp": 57.3,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"106878811489163060073432918143331660202011834176026823613576260885763574273538\", \"13606861588964189965969563550639411590518834519887086494136019177963517956937\"]",
         "condition_id": "0x3bd9947ca15c9b519284b1ee786d337c06bcaff13d6b8e5ccb858490faf6a071",
-        "fetched_utc": "2026-09-30T16:20:44Z"
+        "fetched_utc": "2026-09-30T17:29:40Z"
       }
     },
     "80000": {
@@ -439,7 +439,18 @@
         "14": 0.8101
       },
       "calibration_haircut": 1.0,
-      "haircut_key": "C_early"
+      "haircut_key": "C_early",
+      "polymarket": {
+        "contract": "Will Bitcoin reach $85,000 in September?",
+        "market_price_cents": 56.5,
+        "raw_edge_pp": 24.5,
+        "net_edge_pp": 22.5,
+        "trade_direction": "BUY YES",
+        "edge_label": "STRONG",
+        "clob_token_ids": "[\"83201782899684277706853526937060395891423632910357564412554083015437896173343\", \"78830619996445612620817387273660859407622069052578736154748821688498527206602\"]",
+        "condition_id": "0x60e57a550b8ba6eec317cc8696dbc91df088d593c320e61b2761a1739cbe6c5a",
+        "fetched_utc": "2026-09-30T17:29:40Z"
+      }
     },
     "87500": {
       "direction": "above",
@@ -464,14 +475,14 @@
       "haircut_key": "C_early",
       "polymarket": {
         "contract": "Will Bitcoin reach $87,500 in September?",
-        "market_price_cents": 1.8,
-        "raw_edge_pp": 58.6,
-        "net_edge_pp": 56.6,
+        "market_price_cents": 1.1,
+        "raw_edge_pp": 59.3,
+        "net_edge_pp": 57.3,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"93102073593745160534123412868713328176360151139344483198023062751009656599915\", \"4154193998817736104851866613650963230068092479669344695639193833815805918087\"]",
         "condition_id": "0xff94b7e25f8377d7ad40bbfd172744bec6235b8ffbcaa1f276ec5465191b2216",
-        "fetched_utc": "2026-09-30T16:20:44Z"
+        "fetched_utc": "2026-09-30T17:29:40Z"
       }
     },
     "90000": {
