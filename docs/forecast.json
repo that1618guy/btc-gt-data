@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-30T11:58:09Z",
+  "generated_utc": "2026-09-30T14:31:39Z",
   "forecast_date": "2026-09-29",
   "start_price": 83638.34,
   "regime": "C",
@@ -277,14 +277,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $82,500 in September?",
-        "market_price_cents": 24.5,
-        "raw_edge_pp": 43.6,
-        "net_edge_pp": 41.6,
+        "market_price_cents": 19.6,
+        "raw_edge_pp": 48.6,
+        "net_edge_pp": 46.6,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"106878811489163060073432918143331660202011834176026823613576260885763574273538\", \"13606861588964189965969563550639411590518834519887086494136019177963517956937\"]",
         "condition_id": "0x3bd9947ca15c9b519284b1ee786d337c06bcaff13d6b8e5ccb858490faf6a071",
-        "fetched_utc": "2026-09-30T11:58:09Z"
+        "fetched_utc": "2026-09-30T14:31:39Z"
       }
     },
     "80000": {
@@ -297,6 +297,17 @@
         "7": 0.2931,
         "10": 0.3674,
         "14": 0.4379
+      },
+      "polymarket": {
+        "contract": "Will Bitcoin dip to $80,000 in September?",
+        "market_price_cents": 1.5,
+        "raw_edge_pp": 42.3,
+        "net_edge_pp": 40.3,
+        "trade_direction": "BUY YES",
+        "edge_label": "STRONG",
+        "clob_token_ids": "[\"44784930339689040466651384097570664169365514128061895703704272460650191043847\", \"44471767679138968032936728729837432072866179990249590620189696429072020681385\"]",
+        "condition_id": "0x8c23c2b2b289e72625895d1ce207489c2517d805b4bb50ad3a2b000371763712",
+        "fetched_utc": "2026-09-30T14:31:39Z"
       }
     },
     "77500": {
@@ -439,18 +450,7 @@
         "14": 0.8101
       },
       "calibration_haircut": 1.0,
-      "haircut_key": "C_early",
-      "polymarket": {
-        "contract": "Will Bitcoin reach $85,000 in September?",
-        "market_price_cents": 34.5,
-        "raw_edge_pp": 46.5,
-        "net_edge_pp": 44.5,
-        "trade_direction": "BUY YES",
-        "edge_label": "STRONG",
-        "clob_token_ids": "[\"42540179326911148949312747366160541757409736099598225857206357582755347533551\", \"101084919049393882284797670427476517287660852765717896693263135331685821424842\"]",
-        "condition_id": "0xcbdcc7badf2c57096f93d602dd7052d212ef0deac523083c2641b9e74fa1fd9f",
-        "fetched_utc": "2026-09-30T11:58:09Z"
-      }
+      "haircut_key": "C_early"
     },
     "87500": {
       "direction": "above",
@@ -475,14 +475,14 @@
       "haircut_key": "C_early",
       "polymarket": {
         "contract": "Will Bitcoin reach $87,500 in September?",
-        "market_price_cents": 2.9,
-        "raw_edge_pp": 57.6,
-        "net_edge_pp": 55.6,
+        "market_price_cents": 1.3,
+        "raw_edge_pp": 59.2,
+        "net_edge_pp": 57.2,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"93102073593745160534123412868713328176360151139344483198023062751009656599915\", \"4154193998817736104851866613650963230068092479669344695639193833815805918087\"]",
         "condition_id": "0xff94b7e25f8377d7ad40bbfd172744bec6235b8ffbcaa1f276ec5465191b2216",
-        "fetched_utc": "2026-09-30T11:58:09Z"
+        "fetched_utc": "2026-09-30T14:31:39Z"
       }
     },
     "90000": {
