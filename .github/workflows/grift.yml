@@ -1,0 +1,29 @@
+name: Grift Index
+
+on:
+  schedule:
+    - cron: "30 1 * * *"   # daily at 01:30 UTC, after DefiLlama closes the day
+  workflow_dispatch:         # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compute the Grift Index
+        run: python3 scripts/grift_publish.py docs/grift.json
+      - name: Commit the new reading
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/grift.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update grift.json $(date -u +%F)"
+          git pull --rebase
+          git push
