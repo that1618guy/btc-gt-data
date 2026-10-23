@@ -2,7 +2,10 @@ name: Grift Index
 
 on:
   schedule:
-    - cron: "30 1 * * *"   # daily at 01:30 UTC, after DefiLlama closes the day
+    # every 6 hours (00:20, 06:20, 12:20, 18:20 UTC). DefiLlama posts the previous day's
+    # numbers somewhere between ~6 and ~13 hours after midnight UTC, so one fixed early run
+    # always lands a day behind. Running every 6 hours picks up the new day within hours.
+    - cron: "20 */6 * * *"
   workflow_dispatch:         # lets you run it by hand from the Actions tab
 
 permissions:
@@ -12,8 +15,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Compute the Grift Index
