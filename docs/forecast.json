@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-31T11:43:50Z",
+  "generated_utc": "2026-10-31T14:13:48Z",
   "forecast_date": "2026-10-30",
   "start_price": 77249.53,
   "regime": "C",
@@ -277,14 +277,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $75,000 in October?",
-        "market_price_cents": 1.5,
-        "raw_edge_pp": 65.0,
-        "net_edge_pp": 63.0,
+        "market_price_cents": 1.4,
+        "raw_edge_pp": 65.2,
+        "net_edge_pp": 63.2,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"65710340847928463620991566082994656002922673891777077235559888767925599088131\", \"34913450717134692139134503608237195358004980714821621364139815843727767877427\"]",
         "condition_id": "0x5280e91e95ab540de0879f26813f060f51f9d77d8c2e41dd81f1aec41c8bb714",
-        "fetched_utc": "2026-10-31T11:43:50Z"
+        "fetched_utc": "2026-10-31T14:13:48Z"
       }
     },
     "72500": {
@@ -437,7 +437,7 @@
         "edge_label": "STRONG",
         "clob_token_ids": "[\"14857024977679366028452489053371436056060429534109552454885746130675636787635\", \"113695886393508629932774568453763175646652182761376748969939149839172737522792\"]",
         "condition_id": "0xcc5d03e044ca43b686650b7ef4edd092f98d331337f5b13c530e08a7b403a519",
-        "fetched_utc": "2026-10-31T11:43:50Z"
+        "fetched_utc": "2026-10-31T14:13:48Z"
       }
     },
     "82500": {
