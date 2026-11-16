@@ -37,6 +37,12 @@ FUNDING_START = dt.date(2020, 1, 1)
 CUTS = [(1.24, "green", "green face"), (0.40, "frothy", "frothy"), (-0.49, "neutral", "neutral"), (-0.75, "washed", "washed")]
 LOW = ("flushed", "flushed")
 BOARD_START = "2024-12-01"  # scoreboard baseline: every day from here
+# Window lengths and thresholds. Used by the code below and published as-is in "params",
+# so the page never types one.
+P = {"zWin": 365, "zMin": 90, "avg": 7, "avgMin": 5, "oiDays": 30, "dirDays": 20, "dirStep": 0.4, "peakDays": 30,
+     "rangeDays": 90, "emaDays": 21, "need": 3, "localHighWin": 10, "localHighFrom": -1, "localHighTo": 3,
+     "fundCap": 0.003, "fundClamp": 0.0005, "fundInterest": 0.0001, "everyHours": 6,
+     "staleAfterHours": 18, "staleAsofDays": 3}
 
 
 class FetchError(Exception):
@@ -137,8 +143,8 @@ def daily_funding(funding, prem):
         hs = [prem.get(t - 3600 * k) for k in range(1, 9)]
         if None in hs:
             break
-        P = sum(hs) / 8
-        rebuilt.setdefault(t // D * D, []).append(min(0.003, max(-0.003, P + max(-0.0005, min(0.0005, 0.0001 - P)))))
+        prem_avg = sum(hs) / 8
+        rebuilt.setdefault(t // D * D, []).append(min(P["fundCap"], max(-P["fundCap"], prem_avg + max(-P["fundClamp"], min(P["fundClamp"], P["fundInterest"] - prem_avg)))))
         t += 8 * 3600
     rdays = []
     for k, v in rebuilt.items():
@@ -156,7 +162,7 @@ def rmean(a, n, minp):
     return out
 
 
-def rz(a, win=365, minp=90):
+def rz(a, win=P["zWin"], minp=P["zMin"]):
     out = [None] * len(a)
     for i in range(len(a)):
         if a[i] is None: continue
@@ -177,8 +183,8 @@ def zone(x):
 
 def direction(d):
     if d is None: return None, None
-    if d >= 0.4: return "up", "heating"
-    if d <= -0.4: return "down", "cooling"
+    if d >= P["dirStep"]: return "up", "heating"
+    if d <= -P["dirStep"]: return "down", "cooling"
     return "flat", "holding"
 
 
@@ -204,25 +210,26 @@ def main(out_path):
     f = [fund.get(t) for t in days]
 
     raw = {
-        "funding": rmean(f, 7, 5),
-        "oi": [math.log(oi[i] / oi[i - 30]) if i >= 30 and oi[i] and oi[i - 30] else None for i in range(len(days))],
-        "ls": rmean(acct, 7, 5),
-        "gap": rmean([math.log(a) - math.log(b) if a and b else None for a, b in zip(acct, top)], 7, 5),
+        "funding": rmean(f, P["avg"], P["avgMin"]),
+        "oi": [math.log(oi[i] / oi[i - P["oiDays"]]) if i >= P["oiDays"] and oi[i] and oi[i - P["oiDays"]] else None for i in range(len(days))],
+        "ls": rmean(acct, P["avg"], P["avgMin"]),
+        "gap": rmean([math.log(a) - math.log(b) if a and b else None for a, b in zip(acct, top)], P["avg"], P["avgMin"]),
     }
     z = {k: rz(v) for k, v in raw.items()}
     comp = []
     for i in range(len(days)):
         xs = [z[k][i] for k in z if z[k][i] is not None]
-        comp.append(sum(xs) / len(xs) if len(xs) >= 3 else None)
+        comp.append(sum(xs) / len(xs) if len(xs) >= P["need"] else None)
 
     i = max(k for k, x in enumerate(comp) if x is not None)
     x = comp[i]
-    if (days[-1] - days[i]) // D > 3:
+    if (days[-1] - days[i]) // D > P["staleAsofDays"]:
         sys.exit(f"latest reading {time.strftime('%Y-%m-%d', time.gmtime(days[i]))} is more than 3 days behind the closes; refusing to publish")
-    d20 = x - comp[i - 20] if i >= 20 and comp[i - 20] is not None else None
+    dd = P["dirDays"]
+    d20 = x - comp[i - dd] if i >= dd and comp[i - dd] is not None else None
     valid = [v for v in comp if v is not None]
-    pk, pki = max((comp[k], k) for k in range(max(0, i - 30), i + 1) if comp[k] is not None)
-    w90 = [(comp[k], k) for k in range(max(0, i - 89), i + 1) if comp[k] is not None]
+    pk, pki = max((comp[k], k) for k in range(max(0, i - P["peakDays"]), i + 1) if comp[k] is not None)
+    w90 = [(comp[k], k) for k in range(max(0, i - P["rangeDays"] + 1), i + 1) if comp[k] is not None]
     hi90, lo90 = max(w90), min(w90)
     zk, zl = zone(x)
     dk, dl = direction(d20)
@@ -231,7 +238,7 @@ def main(out_path):
     e, ema = None, []
     for v in c:
         if v is not None:
-            e = v if e is None else e + (2 / 22) * (v - e)
+            e = v if e is None else e + (2 / (P["emaDays"] + 1)) * (v - e)
         ema.append(e)
     state, stateLabel = None, None
     if zk in ("green", "frothy") and c[i] is not None:
@@ -247,11 +254,12 @@ def main(out_path):
     fwd = lambda k, h: c[k + h] / c[k] - 1 if k + h < n and c[k] and c[k + h] else None
 
     def local_high(k):  # peak of the +/-10 day window falls on day -1 to +3
-        if k - 10 < 0 or k + 10 >= n: return None
-        w = c[k - 10:k + 11]
+        L = P["localHighWin"]
+        if k - L < 0 or k + L >= n: return None
+        w = c[k - L:k + L + 1]
         if None in w: return None
-        j = w.index(max(w)) - 10
-        return -1 <= j <= 3
+        j = w.index(max(w)) - L
+        return P["localHighFrom"] <= j <= P["localHighTo"]
 
     posts = []
     for row in csv.DictReader(open(os.path.join(ROOT, "data", "cz_posts.csv"))):
@@ -305,7 +313,9 @@ def main(out_path):
            "posts": [{k: v for k, v in p.items() if k != "t"} for p in posts],
            "board": board,
            "chart": [[days[k], c[k] and round(c[k], 2), None if comp[k] is None else round(comp[k], 3)] for k in range(b0, n)],
-           "method": summ}
+           "method": summ,
+           "histStart": days[next(k for k, v in enumerate(comp) if v is not None)],
+           "params": P}
 
     os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
     fd, tmp = tempfile.mkstemp(dir=os.path.dirname(os.path.abspath(out_path)))
