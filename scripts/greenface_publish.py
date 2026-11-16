@@ -305,6 +305,18 @@ def main(out_path):
              "baseline": base}
     latest = posts[-1] if posts else None
 
+    # The hero: the most recent hype post (even if a dip post came after it), and BTC's move from that
+    # day's close to the latest close in the series.
+    hype = [p for p in posts if p["kind"] == "hype"]
+    hero = None
+    if hype:
+        hp = hype[-1]
+        k0, k1 = ti[hp["t"]], n - 1
+        hero = {"date": hp["date"], "label": hp["label"], "source": hp["source"], "dateConf": hp["dateConf"],
+                "close": hp["close"], "closeNow": round(c[k1], 2), "closeNowDate": days[k1],
+                "since": r(c[k1] / c[k0] - 1, 5) if c[k0] and c[k1] else None,
+                "days": (days[k1] - hp["t"]) // D}
+
     summ = json.load(open(os.path.join(ROOT, "research", "greenface", "summary.json")))
     out = {"asof": days[i], "value": round(x, 6), "zone": zk, "zoneLabel": zl, "dir": dk, "dirLabel": dl,
            "d20": r(d20, 6), "pct": round(sum(1 for v in valid if v < x) / len(valid) * 100, 2),
@@ -321,6 +333,7 @@ def main(out_path):
            "closeFilled": filled,
            "fundRebuilt": {"days": len(rdays), "from": rdays[0] if rdays else None, "to": rdays[-1] if rdays else None},
            "cz": latest and {k: latest[k] for k in ("date", "label", "kind", "dateConf", "source", "zone", "r1", "r7", "r30")},
+           "heroPost": hero,
            "posts": [{k: v for k, v in p.items() if k != "t"} for p in posts],
            "board": board,
            "chart": [[days[k], c[k] and round(c[k], 2), None if comp[k] is None else round(comp[k], 3)] for k in range(b0, n)],
