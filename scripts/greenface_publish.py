@@ -269,7 +269,7 @@ def main(out_path):
         zprev = labs[k - 1] if k >= 1 else None  # the reading visible when the post went out
         posts.append({"date": row["date"], "t": t, "label": row["label"], "kind": row["kind"], "dateConf": row["date_conf"],
                       "source": row["source"], "zone": zprev, "value": r(comp[k - 1], 3) if k >= 1 else None,
-                      "close": c[k] and round(c[k], 2), "r1": r(fwd(k, 1)), "r7": r(fwd(k, 7)), "r30": r(fwd(k, 30)), "localHigh": local_high(k)})
+                      "close": c[k] and round(c[k], 2), "r1": r(fwd(k, 1), 5), "r7": r(fwd(k, 7), 5), "r30": r(fwd(k, 30), 5), "localHigh": local_high(k)})
     posts.sort(key=lambda p: p["t"])
 
     def agg(ps):
@@ -277,7 +277,7 @@ def main(out_path):
         for h in (1, 7, 30):
             v = [p[f"r{h}"] for p in ps if p[f"r{h}"] is not None]
             o[f"n{h}"] = len(v)
-            o[f"r{h}"] = r(sum(v) / len(v)) if v else None
+            o[f"r{h}"] = r(sum(v) / len(v), 5) if v else None
             o[f"up{h}"] = sum(1 for q in v if q > 0)
         lh = [p["localHigh"] for p in ps if p["localHigh"] is not None]
         o["localHigh"], o["localHighN"] = sum(lh), len(lh)
@@ -287,7 +287,7 @@ def main(out_path):
     base = {"from": BOARD_START, "n": n - b0}
     for h in (1, 7, 30):
         v = [fwd(k, h) for k in range(b0, n) if fwd(k, h) is not None]
-        base[f"n{h}"], base[f"r{h}"], base[f"up{h}"] = len(v), r(sum(v) / len(v)), sum(1 for q in v if q > 0)
+        base[f"n{h}"], base[f"r{h}"], base[f"up{h}"] = len(v), r(sum(v) / len(v), 5), sum(1 for q in v if q > 0)
     lh = [local_high(k) for k in range(b0, n) if local_high(k) is not None]
     base["localHigh"], base["localHighN"] = sum(lh), len(lh)
     board = {"kinds": {k: agg([p for p in posts if k == "all" or p["kind"] == k]) for k in ("hype", "dip", "all")},
