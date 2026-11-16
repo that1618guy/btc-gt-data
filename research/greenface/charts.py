@@ -12,8 +12,8 @@ S1, S2, S3 = "#2a78d6", "#eb6834", "#1baf7a"
 plt.rcParams.update({"font.size": 10, "axes.edgecolor": GRID, "axes.labelcolor": INK2, "xtick.color": INK2, "ytick.color": INK2,
                      "axes.spines.top": False, "axes.spines.right": False, "figure.facecolor": SURF, "axes.facecolor": SURF,
                      "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.6, "axes.axisbelow": True})
-ZN = ["green", "frothy", "neutral", "washed", "flushed"]
-NAME = {"green": "green face", "frothy": "frothy", "neutral": "neutral", "washed": "washed", "flushed": "flushed"}
+ZN = ["green", "crowded", "neutral", "washed", "flushed"]
+NAME = {"green": "green face", "crowded": "crowded", "neutral": "neutral", "washed": "washed", "flushed": "flushed"}
 D = lambda t: dt.datetime.utcfromtimestamp(t)
 
 
@@ -50,7 +50,7 @@ def timeline():
     c = [float("nan") if x is None else x for x in s["comp"]]
     b.plot(t, c, color=S1, lw=1)
     cuts = R["BTCUSDT"]["composite"]["cuts"]
-    for cut, nm in zip(cuts, ["green face", "frothy", "neutral", "washed"]):
+    for cut, nm in zip(cuts, ["green face", "crowded", "neutral", "washed"]):
         b.axhline(cut, color=INK2, lw=0.7, ls=":"); b.text(t[0], cut + 0.03, nm, fontsize=7.5, color=INK2)
     b.axvline(D(1704067200), color=INK2, lw=0.8); b.text(D(1704067200 + 86400 * 10), b.get_ylim()[1] * 0.85, "out of sample ->", fontsize=8, color=INK2)
     b.set_ylabel("froth composite (z)")
@@ -80,7 +80,7 @@ def posts():
         hype = p["date"] in {x["date"] for x in R["BTCUSDT"]["cz"]["hype"]["posts"]}
         ax.bar(i, v * 100, color=S2 if hype else S1, width=0.7)
     pool = R["BTCUSDT"]["cz"]["hype"]["B1"]["w14_pool"] * 100
-    ax.axhline(pool, color=INK2, ls="--", lw=1); ax.text(len(ps) - 0.5, pool - 0.4, "avg, frothy+ days with no post (Dec 2024 on)", ha="right", va="top", fontsize=8, color=INK2)
+    ax.axhline(pool, color=INK2, ls="--", lw=1); ax.text(len(ps) - 0.5, pool - 0.4, "avg, crowded+ days with no post (Dec 2024 on)", ha="right", va="top", fontsize=8, color=INK2)
     ax.set_xticks(range(len(ps)), [p["date"][2:] for p in ps], rotation=60, fontsize=7.5)
     from matplotlib.patches import Patch
     ax.legend(handles=[Patch(color=S2, label="hype"), Patch(color=S1, label="dip")], frameon=False, loc="lower left")

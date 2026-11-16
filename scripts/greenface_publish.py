@@ -34,7 +34,7 @@ METRICS_START = dt.date(2020, 9, 1)
 FUNDING_START = dt.date(2020, 1, 1)
 # Zone cut-offs, set on 2020-2023 data only (research/greenface/README.md): composite quantiles at the
 # normal-curve positions of z = 1.5 / 0.7 / -0.8 / -1.3. Not fit to returns.
-CUTS = [(1.24, "green", "green face"), (0.40, "frothy", "frothy"), (-0.49, "neutral", "neutral"), (-0.75, "washed", "washed")]
+CUTS = [(1.24, "green", "green face"), (0.40, "crowded", "crowded"), (-0.49, "neutral", "neutral"), (-0.75, "washed", "washed")]
 LOW = ("flushed", "flushed")
 BOARD_START = "2024-12-01"  # scoreboard baseline: every day from here
 # Window lengths and thresholds. Used by the code below and published as-is in "params",
@@ -241,7 +241,7 @@ def main(out_path):
             e = v if e is None else e + (2 / (P["emaDays"] + 1)) * (v - e)
         ema.append(e)
     state, stateLabel = None, None
-    if zk in ("green", "frothy") and c[i] is not None:
+    if zk in ("green", "crowded") and c[i] is not None:
         state, stateLabel = ("highs", "crowded at highs") if c[i] > ema[i] else ("selloff", "crowded longs into a selloff")
     zi = {k: z[k][i] for k in z}
     have = {k: v for k, v in zi.items() if v is not None}

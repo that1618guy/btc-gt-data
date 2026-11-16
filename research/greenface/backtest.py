@@ -19,7 +19,7 @@ OUT = os.path.dirname(os.path.abspath(__file__))
 IS_END = int(dt.datetime(2024, 1, 1, tzinfo=dt.timezone.utc).timestamp())
 Q = [0.9332, 0.7580, 0.2119, 0.0968]  # Phi(1.5), Phi(0.7), Phi(-0.8), Phi(-1.3)
 FIXED = [1.5, 0.7, -0.8, -1.3]
-ZN = ["green", "frothy", "neutral", "washed", "flushed"]
+ZN = ["green", "crowded", "neutral", "washed", "flushed"]  # "crowded" was called "frothy" before 2026-11-15
 COST = 0.001  # 10 bps per side
 rng = np.random.default_rng(7)
 
@@ -396,7 +396,7 @@ def write_summary(R):
          "lowOOS": tt(b["test_OOS_low"]), "lowIS": tt(b["test_IS_low"]),
          "eth": {"start": e["start"], "testOOS": tt(e["test_OOS"]), "testIS": tt(e["test_IS"]), "zonesOOS": zt(e["OOS"])},
          "alone": {k.split(":")[1]: tt(R["BTCUSDT"][k]["test_OOS"]) for k in R["BTCUSDT"] if k.startswith("alone:")},
-         "cz": {"n": R["BTCUSDT"]["cz"]["all"]["n"], "hypeInFroth": R["BTCUSDT"]["cz"]["hype"]["B1"]["n_posts_hot"],
+         "cz": {"n": R["BTCUSDT"]["cz"]["all"]["n"], "hypeInCrowded": R["BTCUSDT"]["cz"]["hype"]["B1"]["n_posts_hot"],
                 "hypeW14": rnd(R["BTCUSDT"]["cz"]["hype"]["B1"]["w14_posts"]), "poolW14": rnd(R["BTCUSDT"]["cz"]["hype"]["B1"]["w14_pool"]),
                 "p": rnd(R["BTCUSDT"]["cz"]["hype"]["B1"]["p_w14_worse"], 3), "placeboP": rnd(R["BTCUSDT"]["cz"]["hype"]["placebo"]["p_w14_worse"], 3)},
          "fundRebuild": R["fundCheck"]}

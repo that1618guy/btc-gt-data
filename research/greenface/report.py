@@ -1,6 +1,6 @@
 import json, os, sys
 R = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "results.json")))
-ZN = ["green", "frothy", "neutral", "washed", "flushed", "all"]
+ZN = ["green", "crowded", "neutral", "washed", "flushed", "all"]
 pc = lambda x: "—" if x is None else f"{x*100:+.1f}%"
 
 

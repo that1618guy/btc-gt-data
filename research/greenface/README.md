@@ -1,6 +1,6 @@
 # Green Face Index: backtest
 
-Run 2026-11-15. Days are calendar days; the one day missing from gt_regime.json (2026-08-24) is filled with the Binance perp close for this research only. Code in this folder: `pull.py` (downloads to `$GREENFACE_RAW`), `data.py`, `backtest.py` (writes `results.json` and `summary.json`), `report.py`, `charts.py`. `summary.json` is what the publisher copies into `docs/greenface.json`'s method block.
+Run 2026-11-15. **The zone called "frothy" in this write-up was renamed "crowded" on 2026-11-15**; `summary.json` and the published page use the new name. Numbers are unchanged. Days are calendar days; the one day missing from gt_regime.json (2026-08-24) is filled with the Binance perp close for this research only. Code in this folder: `pull.py` (downloads to `$GREENFACE_RAW`), `data.py`, `backtest.py` (writes `results.json` and `summary.json`), `report.py`, `charts.py`. `summary.json` is what the publisher copies into `docs/greenface.json`'s method block.
 
 ## Verdict
 
