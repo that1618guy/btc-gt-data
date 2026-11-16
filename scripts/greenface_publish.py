@@ -42,7 +42,7 @@ BOARD_START = "2024-12-01"  # scoreboard baseline: every day from here
 # so the page never types one.
 P = {"zWin": 365, "zMin": 90, "avg": 7, "avgMin": 5, "oiDays": 30, "dirDays": 20, "dirStep": 0.4, "peakDays": 30,
      "rangeDays": 90, "emaDays": 21, "need": 3, "localHighWin": 10, "localHighFrom": -1, "localHighTo": 3,
-     "dropPct": 0.10, "dropDays": 14,
+     "ddDays": 30, "ddCuts": [0.10, 0.20],
      "fundCap": 0.003, "fundClamp": 0.0005, "fundInterest": 0.0001, "everyHours": 6,
      "staleAfterHours": 18, "staleAsofDays": 3}
 
@@ -264,14 +264,14 @@ def main(out_path):
     n = len(days)
     fwd = lambda k, h: c[k + h] / c[k] - 1 if k + h < n and c[k] and c[k + h] else None
 
-    def drop(k):
-        """A close at least dropPct below day k's close within dropDays. True as soon as it has happened,
-        even if the window isn't complete yet; False only once the whole window has closed without one."""
-        if not c[k]: return None
-        H = P["dropDays"]
-        w = c[k + 1:k + H + 1]
-        if any(x is not None and x / c[k] - 1 <= -P["dropPct"] for x in w): return True
-        return False if len(w) == H and None not in w else None
+    def worst(k):
+        """Worst close in the next ddDays against day k's close, 0 if it never closed lower, and whether
+        the window is still open ("so far": fewer than ddDays of closes after day k)."""
+        if not c[k]: return None, None
+        H = P["ddDays"]
+        w = [x for x in c[k + 1:k + H + 1] if x is not None]
+        if not w: return None, None
+        return min(0.0, min(w) / c[k] - 1), k + H >= n
 
     def local_high(k):  # peak of the +/-10 day window falls on day -1 to +3
         L = P["localHighWin"]
@@ -290,8 +290,17 @@ def main(out_path):
         posts.append({"date": row["date"], "t": t, "label": row["label"], "kind": row["kind"], "dateConf": row["date_conf"],
                       "source": row["source"], "zone": zprev, "value": r(comp[k - 1], 3) if k >= 1 else None,
                       "close": c[k] and round(c[k], 2), "r1": r(fwd(k, 1), 5), "r7": r(fwd(k, 7), 5), "r30": r(fwd(k, 30), 5), "localHigh": local_high(k),
-                      "drop": drop(k)})
+                      "dd30": r(worst(k)[0], 5), "dd30SoFar": worst(k)[1]})
     posts.sort(key=lambda p: p["t"])
+
+    def dd(o, v):
+        """Worst-close-in-ddDays summary: count, how many reached each cut, the median. Open windows
+        count what has happened so far."""
+        v = sorted(x for x in v if x is not None)
+        o["ddN"] = len(v)
+        o["ddHit"] = [sum(1 for x in v if x <= -cut) for cut in P["ddCuts"]]
+        m = len(v)
+        o["ddMedian"] = r((v[m // 2] if m % 2 else (v[m // 2 - 1] + v[m // 2]) / 2), 5) if m else None
 
     def agg(ps):
         o = {"n": len(ps)}
@@ -302,8 +311,7 @@ def main(out_path):
             o[f"up{h}"] = sum(1 for q in v if q > 0)
         lh = [p["localHigh"] for p in ps if p["localHigh"] is not None]
         o["localHigh"], o["localHighN"] = sum(lh), len(lh)
-        dv = [p["drop"] for p in ps if p["drop"] is not None]
-        o["drop"], o["dropN"] = sum(dv), len(dv)
+        dd(o, [p["dd30"] for p in ps])
         return o
 
     b0 = ti[int(dt.datetime.strptime(BOARD_START, "%Y-%m-%d").replace(tzinfo=dt.timezone.utc).timestamp())]
@@ -313,8 +321,7 @@ def main(out_path):
         base[f"n{h}"], base[f"r{h}"], base[f"up{h}"] = len(v), r(sum(v) / len(v), 5), sum(1 for q in v if q > 0)
     lh = [local_high(k) for k in range(b0, n) if local_high(k) is not None]
     base["localHigh"], base["localHighN"] = sum(lh), len(lh)
-    dv = [drop(k) for k in range(b0, n) if drop(k) is not None]
-    base["drop"], base["dropN"] = sum(dv), len(dv)
+    dd(base, [worst(k)[0] for k in range(b0, n)])
     board = {"kinds": {k: agg([p for p in posts if k == "all" or p["kind"] == k]) for k in ("hype", "dip", "all")},
              "zones": {zk_: agg([p for p in posts if p["zone"] == zk_]) for zk_ in [c_[1] for c_ in CUTS] + [LOW[0]]},
              "baseline": base}
