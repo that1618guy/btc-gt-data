@@ -104,7 +104,6 @@ def main(out_path):
     dk, dl = direction(d20)
     out = {"asof": dates[i], "value": round(x, 4), "zone": zk, "zoneLabel": zl, "dir": dk, "dirLabel": dl,
            "d20": None if d20 is None else round(d20, 4), "pct": round(sum(1 for g in valid if g < x) / len(valid) * 100, 2),
-           "zV": round(zV[i], 4), "zF": round(zF[i], 4), "v7": round(v7[i]), "f7": round(f7[i]),
            "peak": round(pk, 4), "peakDate": dates[pki], "missing": missing,
            "spark": [[dates[k], round(gb[k], 3)] for k in range(max(0, i - 179), i + 1) if gb[k] is not None],
            "published": int(time.time())}
