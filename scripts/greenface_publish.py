@@ -296,14 +296,14 @@ def main(out_path):
     latest = posts[-1] if posts else None
 
     summ = json.load(open(os.path.join(ROOT, "research", "greenface", "summary.json")))
-    out = {"asof": days[i], "value": round(x, 4), "zone": zk, "zoneLabel": zl, "dir": dk, "dirLabel": dl,
-           "d20": r(d20), "pct": round(sum(1 for v in valid if v < x) / len(valid) * 100, 2),
-           "peak": round(pk, 4), "peakDate": days[pki], "missing": 4 - len(have),
+    out = {"asof": days[i], "value": round(x, 6), "zone": zk, "zoneLabel": zl, "dir": dk, "dirLabel": dl,
+           "d20": r(d20, 6), "pct": round(sum(1 for v in valid if v < x) / len(valid) * 100, 2),
+           "peak": round(pk, 6), "peakDate": days[pki], "missing": 4 - len(have),
            "spark": [[days[k], round(comp[k], 3)] for k in range(max(0, i - 179), i + 1) if comp[k] is not None],
            "published": int(time.time()),
-           "hi90": round(hi90[0], 4), "hi90Date": days[hi90[1]], "lo90": round(lo90[0], 4), "lo90Date": days[lo90[1]],
+           "hi90": round(hi90[0], 6), "hi90Date": days[hi90[1]], "lo90": round(lo90[0], 6), "lo90Date": days[lo90[1]],
            "cuts": [[lim, key, label] for lim, key, label in CUTS] + [[None, LOW[0], LOW[1]]],
-           "z": {k: r(v, 3) for k, v in zi.items()},
+           "z": {k: r(v, 6) for k, v in zi.items()},
            "inputs": {"funding7": r(raw["funding"][i], 7), "oi30": r(raw["oi"][i]), "ls7": r(raw["ls"][i]), "gap7": r(raw["gap"][i]),
                       "oi": r(oi[i], 1)},
            "driver": driver, "state": state, "stateLabel": stateLabel,
