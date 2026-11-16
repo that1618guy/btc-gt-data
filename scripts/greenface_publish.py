@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publishes the Green Face Index reading as one JSON file for stateofblocks.com.
+"""Publishes the Green Face Tracker reading as one JSON file for stateofblocks.com.
 
 How crowded Binance BTC perps are. Four inputs from Binance's public data dumps (data.binance.vision),
 each z-scored against its trailing 365 days (minimum 90), composite = their mean (needs 3 of 4):

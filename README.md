@@ -3,10 +3,10 @@
 Public JSON files for State of Blocks dashboards, served from GitHub Pages
 (`https://that1618guy.github.io/btc-gt-data/<file>.json`).
 
-## Green Face Index
+## Green Face Tracker
 
-What Bitcoin did after CZ's bullish posts, with a crowding gauge for Binance BTC perps as the backdrop.
-Page: stateofblocks.com/dashboards/green-face/.
+What Bitcoin did after CZ's bullish posts. A crowding gauge for Binance BTC perps sits beside it as the backdrop.
+Page: stateofblocks.com/dashboards/green-face/. Data: docs/greenface.json.
 
 - `scripts/greenface_publish.py` writes `docs/greenface.json` every 6 hours (`.github/workflows/greenface.yml`).
 - `data/cz_posts.csv` is the post log.

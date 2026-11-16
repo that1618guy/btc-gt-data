@@ -1,4 +1,4 @@
-name: Green Face Index
+name: Green Face Tracker
 
 on:
   schedule:
@@ -30,7 +30,7 @@ jobs:
           path: .cache/greenface
           key: greenface-raw-${{ github.run_id }}
           restore-keys: greenface-raw-
-      - name: Compute the Green Face Index
+      - name: Compute the Green Face Tracker
         run: python3 scripts/greenface_publish.py docs/greenface.json
       - name: Commit the new reading
         run: |

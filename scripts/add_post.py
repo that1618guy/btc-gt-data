@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add a CZ post to the Green Face Index log (data/cz_posts.csv). Standard library only.
+"""Add a CZ post to the Green Face Tracker log (data/cz_posts.csv). Standard library only.
 
     python3 scripts/add_post.py 2026-11-20 "Bitcoin is resilient." hype https://x.com/cz_binance/status/...
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Green Face Index backtest. Writes research/greenface/results.json (+ charts via charts.py).
+"""Green Face Tracker backtest. Writes research/greenface/results.json (+ charts via charts.py).
 
 Pre-registered (fixed before looking at outcomes):
   primary metric   worst close in the next 14 days (min close[t+1..t+14] / close[t] - 1), by zone, out of sample
