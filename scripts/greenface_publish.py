@@ -42,6 +42,7 @@ BOARD_START = "2024-12-01"  # scoreboard baseline: every day from here
 # so the page never types one.
 P = {"zWin": 365, "zMin": 90, "avg": 7, "avgMin": 5, "oiDays": 30, "dirDays": 20, "dirStep": 0.4, "peakDays": 30,
      "rangeDays": 90, "emaDays": 21, "need": 3, "localHighWin": 10, "localHighFrom": -1, "localHighTo": 3,
+     "dropPct": 0.10, "dropDays": 14,
      "fundCap": 0.003, "fundClamp": 0.0005, "fundInterest": 0.0001, "everyHours": 6,
      "staleAfterHours": 18, "staleAsofDays": 3}
 
@@ -263,6 +264,15 @@ def main(out_path):
     n = len(days)
     fwd = lambda k, h: c[k + h] / c[k] - 1 if k + h < n and c[k] and c[k + h] else None
 
+    def drop(k):
+        """A close at least dropPct below day k's close within dropDays. True as soon as it has happened,
+        even if the window isn't complete yet; False only once the whole window has closed without one."""
+        if not c[k]: return None
+        H = P["dropDays"]
+        w = c[k + 1:k + H + 1]
+        if any(x is not None and x / c[k] - 1 <= -P["dropPct"] for x in w): return True
+        return False if len(w) == H and None not in w else None
+
     def local_high(k):  # peak of the +/-10 day window falls on day -1 to +3
         L = P["localHighWin"]
         if k - L < 0 or k + L >= n: return None
@@ -279,7 +289,8 @@ def main(out_path):
         zprev = labs[k - 1] if k >= 1 else None  # the reading visible when the post went out
         posts.append({"date": row["date"], "t": t, "label": row["label"], "kind": row["kind"], "dateConf": row["date_conf"],
                       "source": row["source"], "zone": zprev, "value": r(comp[k - 1], 3) if k >= 1 else None,
-                      "close": c[k] and round(c[k], 2), "r1": r(fwd(k, 1), 5), "r7": r(fwd(k, 7), 5), "r30": r(fwd(k, 30), 5), "localHigh": local_high(k)})
+                      "close": c[k] and round(c[k], 2), "r1": r(fwd(k, 1), 5), "r7": r(fwd(k, 7), 5), "r30": r(fwd(k, 30), 5), "localHigh": local_high(k),
+                      "drop": drop(k)})
     posts.sort(key=lambda p: p["t"])
 
     def agg(ps):
@@ -291,6 +302,8 @@ def main(out_path):
             o[f"up{h}"] = sum(1 for q in v if q > 0)
         lh = [p["localHigh"] for p in ps if p["localHigh"] is not None]
         o["localHigh"], o["localHighN"] = sum(lh), len(lh)
+        dv = [p["drop"] for p in ps if p["drop"] is not None]
+        o["drop"], o["dropN"] = sum(dv), len(dv)
         return o
 
     b0 = ti[int(dt.datetime.strptime(BOARD_START, "%Y-%m-%d").replace(tzinfo=dt.timezone.utc).timestamp())]
@@ -300,6 +313,8 @@ def main(out_path):
         base[f"n{h}"], base[f"r{h}"], base[f"up{h}"] = len(v), r(sum(v) / len(v), 5), sum(1 for q in v if q > 0)
     lh = [local_high(k) for k in range(b0, n) if local_high(k) is not None]
     base["localHigh"], base["localHighN"] = sum(lh), len(lh)
+    dv = [drop(k) for k in range(b0, n) if drop(k) is not None]
+    base["drop"], base["dropN"] = sum(dv), len(dv)
     board = {"kinds": {k: agg([p for p in posts if k == "all" or p["kind"] == k]) for k in ("hype", "dip", "all")},
              "zones": {zk_: agg([p for p in posts if p["zone"] == zk_]) for zk_ in [c_[1] for c_ in CUTS] + [LOW[0]]},
              "baseline": base}
