@@ -12,7 +12,8 @@ each z-scored against its trailing 365 days (minimum 90), composite = their mean
 Binance posts funding as monthly files, so days after the last monthly file are rebuilt from the
 hourly premium index (avg premium + clamp(0.01% - premium, +/-0.05%), capped at +/-0.3%).
 
-BTC closes come from the `price` field of docs/gt_regime.json and nothing else in that file is read.
+BTC closes come from the `price` field of docs/gt_regime.json and nothing else in that file is read. A single
+missing day there is filled with Binance's BTCUSDT perp daily close and listed in "closeFilled".
 The post log is data/cz_posts.csv. The research numbers in the method block come from
 research/greenface/summary.json, written by the backtest in research/greenface/.
 
@@ -200,7 +201,16 @@ def main(out_path):
     g = json.load(open(os.path.join(ROOT, "docs", "gt_regime.json")))["rows"]
     close = {int(dt.datetime.strptime(x["date"], "%Y-%m-%d").replace(tzinfo=dt.timezone.utc).timestamp()): float(x["price"])
              for x in g if x.get("price") is not None}
-    days = list(range(min(close), max(close) + D, D))  # calendar days; a day missing from gt_regime has no close
+    days = list(range(min(close), max(close) + D, D))  # calendar days
+    # A single day missing from gt_regime (both neighbours present) is filled with Binance's BTCUSDT perp
+    # daily close, as the research does. Longer gaps stay empty and the returns that need them are skipped.
+    filled = []
+    for t in days:
+        if t not in close and (t - D) in close and (t + D) in close:
+            dd = dt.datetime.fromtimestamp(t, dt.timezone.utc).date()
+            rows = fetch(f"daily/klines/{SYM}/1d/{SYM}-1d-{dd:%Y-%m-%d}.zip", recent=False)
+            close[t] = float(rows[0][4])
+            filled.append(f"{dd:%Y-%m-%d}")
     c = [close.get(t) for t in days]
     gaps = sum(1 for v in c[-400:] if v is None)
     if gaps > 5:
@@ -308,6 +318,7 @@ def main(out_path):
                       "oi": r(oi[i], 1)},
            "driver": driver, "state": state, "stateLabel": stateLabel,
            "close": c[i] and round(c[i], 2), "ema21": round(ema[i], 2),
+           "closeFilled": filled,
            "fundRebuilt": {"days": len(rdays), "from": rdays[0] if rdays else None, "to": rdays[-1] if rdays else None},
            "cz": latest and {k: latest[k] for k in ("date", "label", "kind", "dateConf", "source", "zone", "r1", "r7", "r30")},
            "posts": [{k: v for k, v in p.items() if k != "t"} for p in posts],
