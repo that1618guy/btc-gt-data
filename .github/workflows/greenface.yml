@@ -1,0 +1,43 @@
+name: Green Face Index
+
+on:
+  schedule:
+    # every 6 hours (00:50, 06:50, 12:50, 18:50 UTC). data.binance.vision posts each day's files
+    # some hours after midnight UTC, and gt_regime.json updates on its own schedule, so a fixed
+    # once-a-day run can land a day behind. Every 6 hours picks up the new day within hours.
+    - cron: "50 */6 * * *"
+  workflow_dispatch:         # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: greenface
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      # Binance's dump files never change once posted, so keep them between runs.
+      - uses: actions/cache@v4
+        with:
+          path: .cache/greenface
+          key: greenface-raw-${{ github.run_id }}
+          restore-keys: greenface-raw-
+      - name: Compute the Green Face Index
+        run: python3 scripts/greenface_publish.py docs/greenface.json
+      - name: Commit the new reading
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/greenface.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update greenface.json $(date -u +%F)"
+          git pull --rebase
+          git push
