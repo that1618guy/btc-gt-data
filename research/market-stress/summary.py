@@ -1,4 +1,4 @@
-"""Compact research numbers the page shows. Reads research/out/results.json, writes research/washout/summary.json."""
+"""Compact research numbers the page shows. Reads research/out/results.json, writes research/market-stress/summary.json."""
 import json, sys
 import pandas as pd
 R = json.load(open(sys.argv[1]))

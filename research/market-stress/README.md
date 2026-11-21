@@ -1,4 +1,4 @@
-# Washout Index: research notes
+# Market Stress Index: research notes
 
 Written Nov 20, 2026. Sample: Mar 6, 2006 (first VVIX print) to Nov 19, 2026, 5,212 sessions. Nov 20, 2026 is the live session and uses the 3:57pm ET values from the reference screenshot (VIX 40.03, VVIX 146.36, COR1M 44.71, SPY 687.32), so treat that day as provisional until the publisher writes the real close.
 
@@ -81,7 +81,7 @@ Robustness: across dollar lines from +1% to +3% and MOVE lines from the 80th to 
 
 ## Files
 
-- `engine.py` (pandas, research) and `scripts/washout_publish.py` (standard library, production) compute the same thing. Checked session by session over 5,170 sessions: largest score difference 1e-12, no state, funding or percentile mismatches.
+- `engine.py` (pandas, research) and `scripts/market_stress_publish.py` (standard library, production) compute the same thing. Checked session by session over 5,170 sessions: largest score difference 1e-12, no state, funding or percentile mismatches.
 - `backtest.py` writes `out/results.json`; `ablation.py` runs the drop-one-input and five-input tests; `summary.py` writes `summary.json`, the numbers the page shows.
 - `build_data.py` assembles the panel from the public sources listed below.
 

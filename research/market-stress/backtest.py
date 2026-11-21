@@ -1,4 +1,4 @@
-"""Washout Index backtest.  python3 -I research/backtest.py <data_dir> <out_dir>
+"""Market Stress Index backtest.  python3 -I research/backtest.py <data_dir> <out_dir>
 
 Trailing data only. Entries at the session close (SPX) or the BTC daily close of the same date
 (00:00 UTC, three hours after the US close). Sample: 2006-03-06 (first VVIX print) to 2026-11-19;

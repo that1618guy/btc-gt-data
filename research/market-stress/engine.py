@@ -1,4 +1,4 @@
-"""Washout Index engine. State of Blocks, Macro column.
+"""Market Stress Index engine. State of Blocks, Macro column.
 
 The reading (0-100) asks one question: how close are US equities to a washout, the forced-
 selling flush that historically marks the buy? Three inputs, a third of the reading each:

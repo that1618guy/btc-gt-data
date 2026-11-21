@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publishes the Washout Index (State of Blocks, Macro column) as one JSON file.
+"""Publishes the Market Stress Index (State of Blocks, Macro column) as one JSON file.
 
 The reading, 0-100, a third each:
   fear       VIX                        scored 15 -> 40
@@ -15,12 +15,12 @@ sessions; dollar stressed when DXY is up 2%+ over 20 sessions. Either one = fund
 
 Sources: Cboe's daily history files (VIX, VVIX) and Yahoo Finance daily bars (^GSPC, ^MOVE,
 DX-Y.NYB, BTC-USD). The research numbers shown on the page come from
-research/washout/summary.json, written by the backtest in research/washout/.
+research/market-stress/summary.json, written by the backtest in research/market-stress/.
 
-Runs in the btc-gt-data repo through .github/workflows/washout.yml.
+Runs in the btc-gt-data repo through .github/workflows/market-stress.yml.
 
-By hand:      python3 scripts/washout_publish.py docs/washout.json
-Offline test: python3 scripts/washout_publish.py out.json --local <dir with panel.csv move.csv dxy.csv btc.csv>
+By hand:      python3 scripts/market_stress_publish.py docs/market-stress.json
+Offline test: python3 scripts/market_stress_publish.py out.json --local <dir with panel.csv move.csv dxy.csv btc.csv>
 Standard library only.
 """
 import csv, json, math, os, sys, tempfile, time, urllib.request
@@ -443,7 +443,7 @@ def main(out_path, local=None):
     research = {"computed": "every run", "sample": {"from": cal[k0].isoformat(), "to": cal[i - 1].isoformat(), "stressEvents": len(sell), "washouts": len(hist)},
                 "zones": zones, "split": split, "entries": entries, "matched": matched,
                 "lowerCloseAfter": {"n": sum(1 for x in dd6 if x < 0), "of": len(dd6)}}
-    summary_path = os.path.join(ROOT, "research", "washout", "summary.json")
+    summary_path = os.path.join(ROOT, "research", "market-stress", "summary.json")
     if os.path.exists(summary_path):  # notes on the tested-and-dropped input stay with the research
         research["cor1m"] = json.load(open(summary_path)).get("cor1m")
 
