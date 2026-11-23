@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-23T06:00:34Z",
+  "generated_utc": "2026-11-23T07:00:34Z",
   "forecast_date": "2026-11-22",
   "start_price": 61223.63,
   "regime": "Mixed",
@@ -277,14 +277,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $60,000 in November?",
-        "market_price_cents": 68.5,
-        "raw_edge_pp": 0.4,
-        "net_edge_pp": -1.6,
-        "trade_direction": "BUY YES",
+        "market_price_cents": 69.5,
+        "raw_edge_pp": -0.5,
+        "net_edge_pp": 1.5,
+        "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"8640521678007551294441164778899366915668360247025332698948457840442477780634\", \"91382289389327523825392396538271185744345082051354462319189085637562155397554\"]",
         "condition_id": "0xfa36a6fb0a4f1b42f5a1fba3c3ac037c2505e69e9efecf0db9b82313db0de332",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "57500": {
@@ -300,14 +300,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $57,500 in November?",
-        "market_price_cents": 35.0,
-        "raw_edge_pp": 10.7,
-        "net_edge_pp": 8.7,
+        "market_price_cents": 35.5,
+        "raw_edge_pp": 10.2,
+        "net_edge_pp": 8.2,
         "trade_direction": "BUY YES",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"52034747874794321132269894938999157695175231355744821825506162146846878211154\", \"96853316773653157771860239372246295137981863065365311036754496426107517778879\"]",
         "condition_id": "0x784e2c46bed32b13a078e518399752d89b5def56a3a945870b1565ee59b7b200",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "55000": {
@@ -330,7 +330,7 @@
         "edge_label": "STRONG",
         "clob_token_ids": "[\"86818214716339720623824297871888907455819034267198335174718592093543870031596\", \"34486274497219401190105867456670397932477225968828604202014096609283683225717\"]",
         "condition_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "52500": {
@@ -353,7 +353,7 @@
         "edge_label": "MODERATE",
         "clob_token_ids": "[\"57262514223782033093240713701226939851669731050011954521827566775962691875445\", \"76271002287793271354225331833686087491326385302841219873761084628145215158084\"]",
         "condition_id": "0xc02b6d88da49729f9461451ce82d54dac0b39d756038c20fe0485f50e201aac5",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "50000": {
@@ -376,7 +376,7 @@
         "edge_label": "THIN",
         "clob_token_ids": "[\"40787379620809155025574835956769265655651949531083698323997948890580136606036\", \"75190050149088435796783056741669146621183476226848446355735103622040692361751\"]",
         "condition_id": "0x3b47499a7eec8a7a1b3bbb63854910fe67007576a583a485f816b4fd97c4f816",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "47500": {
@@ -393,13 +393,13 @@
       "polymarket": {
         "contract": "Will Bitcoin dip to $47,500 in November?",
         "market_price_cents": 5.7,
-        "raw_edge_pp": -2.1,
-        "net_edge_pp": -0.1,
+        "raw_edge_pp": -2.0,
+        "net_edge_pp": 0.0,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"20338651717407065492066351942994419769375730704273605997828357191915530753933\", \"27408569950616335548241657630334330871032042730837704192324019538797648483209\"]",
         "condition_id": "0x7761dd35e27e2807c857103890511cfa2413903016288897ac0bbc0fcde61722",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "45000": {
@@ -415,14 +415,14 @@
       },
       "polymarket": {
         "contract": "Will Bitcoin dip to $45,000 in November?",
-        "market_price_cents": 2.4,
-        "raw_edge_pp": -0.9,
-        "net_edge_pp": 1.1,
+        "market_price_cents": 2.6,
+        "raw_edge_pp": -1.2,
+        "net_edge_pp": 0.8,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"30930500382309493945729692049971529239536037494929221972550127056272159901660\", \"70383199308795750226600551963906876707643282160492450237702292587302573174181\"]",
         "condition_id": "0x3df7f862b624c627fc156c6235f973404bcc3786df4d1f799c28e00a6fcfe0f0",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "42500": {
@@ -472,14 +472,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $62,500 in November?",
-        "market_price_cents": 85.5,
-        "raw_edge_pp": -33.6,
-        "net_edge_pp": -31.6,
+        "market_price_cents": 82.5,
+        "raw_edge_pp": -30.6,
+        "net_edge_pp": -28.6,
         "trade_direction": "BUY NO",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"90332649632973935873729012827647794478855944164008598937974793164127187079254\", \"37819336490207604913755387731089665179347477477186869452903350952708730786793\"]",
         "condition_id": "0xc9bb779c43b6ffeebf946c03f546ef46bc3e82edcd2c236f3a9b5e7bdb2dcc05",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "65000": {
@@ -505,14 +505,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $65,000 in November?",
-        "market_price_cents": 47.5,
-        "raw_edge_pp": -8.9,
-        "net_edge_pp": -6.9,
+        "market_price_cents": 45.5,
+        "raw_edge_pp": -6.9,
+        "net_edge_pp": -4.9,
         "trade_direction": "BUY NO",
         "edge_label": "MODERATE",
         "clob_token_ids": "[\"71536471799782401560538271803114666256335347470406712059856508939534150850306\", \"11671905458501352022881941755142683247485876103626708363186366666337310704605\"]",
         "condition_id": "0x1444c23bbb16890b3c128f420d7dffcc1034b27c1a0832c6301586ac4154caca",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "67500": {
@@ -538,14 +538,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $67,500 in November?",
-        "market_price_cents": 23.0,
-        "raw_edge_pp": -11.8,
-        "net_edge_pp": -9.8,
+        "market_price_cents": 22.5,
+        "raw_edge_pp": -11.3,
+        "net_edge_pp": -9.3,
         "trade_direction": "BUY NO",
         "edge_label": "STRONG",
         "clob_token_ids": "[\"85500573874305582410874480015157916461821031241848444799807243416414940909062\", \"73688107762857402124697325163303082759218725560832395283483121244768939937405\"]",
         "condition_id": "0x215898981a482d275f91f8f9523f9cf7d582be172557e0c953f265a54936878a",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "70000": {
@@ -571,14 +571,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $70,000 in November?",
-        "market_price_cents": 11.5,
-        "raw_edge_pp": -3.1,
-        "net_edge_pp": -1.1,
+        "market_price_cents": 10.5,
+        "raw_edge_pp": -2.1,
+        "net_edge_pp": -0.1,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"50173184682134571785389779976617794753397003678266518524219655398814132885843\", \"72569614261458431820700838245136646200119227447115417288433562194070254856300\"]",
         "condition_id": "0x4e217b91f484e4b1169728aca5eebe858015bca82719140cfd240e8a3f39736f",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "72500": {
@@ -604,14 +604,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $72,500 in November?",
-        "market_price_cents": 6.3,
-        "raw_edge_pp": -0.9,
-        "net_edge_pp": 1.1,
-        "trade_direction": "BUY NO",
+        "market_price_cents": 5.2,
+        "raw_edge_pp": 0.1,
+        "net_edge_pp": -1.9,
+        "trade_direction": "BUY YES",
         "edge_label": "THIN",
         "clob_token_ids": "[\"20894970106474010140084346386000010106201124391396027846961318021848971843987\", \"114903462612355184984137070670434914533345138399010988247188477558461263422979\"]",
         "condition_id": "0x7d2dce9ecaa2081bdf030dbd8eea760e4ce0f549aa15497cd32dda865ff240b3",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "75000": {
@@ -637,14 +637,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $75,000 in November?",
-        "market_price_cents": 5.0,
-        "raw_edge_pp": -1.6,
-        "net_edge_pp": 0.4,
+        "market_price_cents": 4.6,
+        "raw_edge_pp": -1.3,
+        "net_edge_pp": 0.7,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"50517692265527268203232201664705216844024869598694278191978624882771545229398\", \"40698209432750612619969764969351652180271536074879003617261857409194802216836\"]",
         "condition_id": "0xc9412cbf6f80ddf4edb0a904fc969c07e542cf215e473905598d73f92139d6ac",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "77500": {
@@ -670,14 +670,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $77,500 in November?",
-        "market_price_cents": 3.0,
-        "raw_edge_pp": -1.0,
-        "net_edge_pp": 1.0,
+        "market_price_cents": 2.4,
+        "raw_edge_pp": -0.3,
+        "net_edge_pp": 1.7,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"112170464276999867731204834305770880247776250023972755406183158569560236339005\", \"61357079799703811295643678308383594956403603130135120012504232476867504319201\"]",
         "condition_id": "0x9b25ec3f7bde8bbec7456d4c027396c6f64e274900da4a13f48cdd4f4a90c398",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "80000": {
@@ -703,14 +703,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $80,000 in November?",
-        "market_price_cents": 1.9,
-        "raw_edge_pp": -0.7,
-        "net_edge_pp": 1.3,
-        "trade_direction": "BUY NO",
+        "market_price_cents": 1.1,
+        "raw_edge_pp": 0.1,
+        "net_edge_pp": -1.9,
+        "trade_direction": "BUY YES",
         "edge_label": "THIN",
         "clob_token_ids": "[\"94808911375774417524246602639171592851931101855605434783491820989336519907544\", \"82154769034623746369839688437559586897514933505179956148276474341732162886021\"]",
         "condition_id": "0x6f9d3f8478b79527fbfa1b6528fa0b63ca2ce813e4f44a5326af35aac5d96924",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     },
     "82500": {
@@ -736,14 +736,14 @@
       "haircut_key": "M",
       "polymarket": {
         "contract": "Will Bitcoin reach $82,500 in November?",
-        "market_price_cents": 1.4,
-        "raw_edge_pp": -0.6,
-        "net_edge_pp": 1.4,
+        "market_price_cents": 1.1,
+        "raw_edge_pp": -0.4,
+        "net_edge_pp": 1.6,
         "trade_direction": "BUY NO",
         "edge_label": "THIN",
         "clob_token_ids": "[\"16430948482613395141902820096738612895837881510985063806487886277138327475365\", \"11690547511170170784686023487217980475538412025891281153788594788726031378553\"]",
         "condition_id": "0xb448e566d3ebb8f8d794a55a9d86664ed36a740319175f01320e1088e1fdb7c8",
-        "fetched_utc": "2026-11-23T06:00:34Z"
+        "fetched_utc": "2026-11-23T07:00:34Z"
       }
     }
   }
